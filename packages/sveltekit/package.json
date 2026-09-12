@@ -2,6 +2,14 @@
 	"name": "@well-known-js/sveltekit",
 	"version": "1.0.1",
 	"description": "SvelteKit integration for generating .well-known files.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"sveltekit",
+		"svelte",
+		"web-standards",
+		"integration"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

@@ -2,6 +2,14 @@
 	"name": "@well-known-js/vite",
 	"version": "1.0.1",
 	"description": "Vite plugin for generating .well-known files.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"vite",
+		"web-standards",
+		"plugin",
+		"build-tool"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

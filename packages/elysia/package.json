@@ -2,6 +2,14 @@
 	"name": "@well-known-js/elysia",
 	"version": "1.0.1",
 	"description": "Elysia plugin for serving .well-known routes.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"elysia",
+		"bun",
+		"web-standards",
+		"plugin"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

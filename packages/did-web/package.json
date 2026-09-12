@@ -2,6 +2,14 @@
 	"name": "@well-known-js/did-web",
 	"version": "1.0.0",
 	"description": "Generate did:web DID documents.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"did-web",
+		"did",
+		"decentralized-identity",
+		"identity"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",
