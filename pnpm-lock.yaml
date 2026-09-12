@@ -68,6 +68,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -126,6 +129,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -184,6 +190,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -242,6 +251,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -303,6 +315,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -367,6 +382,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -431,6 +449,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -492,6 +513,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -565,6 +589,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -629,6 +656,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -699,6 +729,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -757,6 +790,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -821,6 +857,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -879,6 +918,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -937,6 +979,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -1004,6 +1049,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -1062,6 +1110,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-configuration':
+        specifier: workspace:*
+        version: link:../../packages/did-configuration
       '@well-known-js/did-web':
         specifier: workspace:*
         version: link:../../packages/did-web
@@ -1174,6 +1225,15 @@ importers:
         version: 6.4.8(@types/node@24.13.4)(db0@0.3.4)(ioredis@5.11.1)(jiti@2.7.0)(lightningcss@1.33.0)(rollup@4.63.2)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)
 
   packages/core: {}
+
+  packages/did-configuration:
+    dependencies:
+      '@well-known-js/core':
+        specifier: workspace:*
+        version: link:../core
+      zod:
+        specifier: ^4.6.2
+        version: 4.6.2
 
   packages/did-web:
     dependencies:
