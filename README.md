@@ -360,13 +360,14 @@ pnpm install
 pnpm typecheck
 pnpm test
 pnpm build
+pnpm check:integrations
 pnpm format:check
 pnpm lint
 ```
 
-Integration examples for SvelteKit, Next.js, Nuxt, NestJS, and Express are available under
-`examples`. They are included in the workspace build; the remaining adapters have focused package
-tests for their native registration APIs.
+Every framework adapter has an example under `examples`. Feature and integration coverage is
+declared in `well-known.features.json`; ready features must be configured by every example, while
+features under development are reported as warnings by `pnpm check:integrations`.
 
 ## License
 
