@@ -6,6 +6,7 @@
 		{ "path": "./packages/assetlinks" },
 		{ "path": "./packages/vite" },
 		{ "path": "./packages/sveltekit" },
-		{ "path": "./packages/next" }
+		{ "path": "./packages/next" },
+		{ "path": "./packages/nestjs" }
 	]
 }

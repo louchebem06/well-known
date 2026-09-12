@@ -1,0 +1,46 @@
+{
+	"name": "@well-known/nestjs",
+	"version": "1.0.0",
+	"description": "NestJS integration for serving .well-known routes.",
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --clean",
+		"dev": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --watch",
+		"typecheck": "tsc -b",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"@well-known/core": "workspace:*"
+	},
+	"peerDependencies": {
+		"@nestjs/common": ">=11 <13",
+		"reflect-metadata": "^0.2.0",
+		"rxjs": "^7.1.0"
+	},
+	"devDependencies": {
+		"@nestjs/common": "^12.0.1",
+		"@nestjs/core": "^12.0.1",
+		"@nestjs/testing": "^12.0.1",
+		"reflect-metadata": "^0.2.2",
+		"rxjs": "^7.8.0"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
