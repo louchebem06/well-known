@@ -33,6 +33,15 @@
 	],
 	"features": [
 		{
+			"id": "did-web",
+			"package": "@well-known-js/did-web",
+			"export": "didWeb",
+			"filename": "did.json",
+			"path": "/.well-known/did.json",
+			"contentType": "application/json",
+			"status": "ready"
+		},
+		{
 			"id": "gpc",
 			"package": "@well-known-js/gpc",
 			"export": "gpc",

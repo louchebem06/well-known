@@ -1,5 +1,6 @@
 import { agentCard } from "@well-known-js/agent-card";
 import { apiCatalog } from "@well-known-js/api-catalog";
+import { didWeb } from "@well-known-js/did-web";
 import { gpc } from "@well-known-js/gpc";
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
@@ -12,6 +13,19 @@ import { securityTxt } from "@well-known-js/security-txt";
 import { webAuthn } from "@well-known-js/webauthn";
 export default defineConfig({
 	providers: [
+		didWeb({
+			"@context": "https://www.w3.org/ns/did/v1",
+			id: "did:web:example.com",
+			verificationMethod: [
+				{
+					id: "did:web:example.com#owner",
+					type: "Multikey",
+					controller: "did:web:example.com",
+					publicKeyMultibase: "z6MkExamplePublicKey",
+				},
+			],
+			authentication: ["did:web:example.com#owner"],
+		}),
 		gpc({
 			gpc: true,
 			lastUpdate: "2026-09-12",

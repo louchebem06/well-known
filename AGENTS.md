@@ -10,6 +10,7 @@ The workspace is split into small, framework-agnostic packages:
 - `packages/agent-card`: Agent2Agent Agent Card provider and schema.
 - `packages/api-catalog`: RFC 9727 API Catalog Linkset provider and schema.
 - `packages/gpc`: Global Privacy Control support resource provider and schema.
+- `packages/did-web`: did:web DID document provider and schema.
 - `packages/apple-app-site-association`: Apple App Site Association provider and schema.
 - `packages/assetlinks`: Android Digital Asset Links provider and schema.
 - `packages/security-txt`: RFC 9116 security.txt provider and schema.

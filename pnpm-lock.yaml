@@ -68,6 +68,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -123,6 +126,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -178,6 +184,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -233,6 +242,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/elysia':
         specifier: workspace:*
         version: link:../../packages/elysia
@@ -291,6 +303,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/express':
         specifier: workspace:*
         version: link:../../packages/express
@@ -352,6 +367,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/fastify':
         specifier: workspace:*
         version: link:../../packages/fastify
@@ -413,6 +431,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -471,6 +492,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -541,6 +565,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -602,6 +629,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -669,6 +699,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -724,6 +757,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -785,6 +821,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -840,6 +879,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -895,6 +937,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -959,6 +1004,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -1014,6 +1062,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/did-web':
+        specifier: workspace:*
+        version: link:../../packages/did-web
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
@@ -1123,6 +1174,15 @@ importers:
         version: 6.4.8(@types/node@24.13.4)(db0@0.3.4)(ioredis@5.11.1)(jiti@2.7.0)(lightningcss@1.33.0)(rollup@4.63.2)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)
 
   packages/core: {}
+
+  packages/did-web:
+    dependencies:
+      '@well-known-js/core':
+        specifier: workspace:*
+        version: link:../core
+      zod:
+        specifier: ^4.6.2
+        version: 4.6.2
 
   packages/elysia:
     dependencies:
