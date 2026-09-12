@@ -10,6 +10,7 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
+		"@well-known-js/agent-card": "workspace:*",
 		"@well-known-js/apple-app-site-association": "workspace:*",
 		"@well-known-js/assetlinks": "workspace:*",
 		"@well-known-js/astro": "workspace:*",

@@ -33,6 +33,15 @@
 	],
 	"features": [
 		{
+			"id": "agent-card",
+			"package": "@well-known-js/agent-card",
+			"export": "agentCard",
+			"filename": "agent-card.json",
+			"path": "/.well-known/agent-card.json",
+			"contentType": "application/json",
+			"status": "ready"
+		},
+		{
 			"id": "apple-app-site-association",
 			"package": "@well-known-js/apple-app-site-association",
 			"export": "appleAppSiteAssociation",

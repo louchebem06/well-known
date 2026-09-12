@@ -7,6 +7,7 @@ This repository is a pnpm workspace for generating files served from `/.well-kno
 The workspace is split into small, framework-agnostic packages:
 
 - `packages/core`: shared provider contracts and `defineConfig`.
+- `packages/agent-card`: Agent2Agent Agent Card provider and schema.
 - `packages/apple-app-site-association`: Apple App Site Association provider and schema.
 - `packages/assetlinks`: Android Digital Asset Links provider and schema.
 - `packages/security-txt`: RFC 9116 security.txt provider and schema.
