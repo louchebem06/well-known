@@ -76,6 +76,15 @@
 			"path": "/.well-known/passkey-endpoints",
 			"contentType": "application/json",
 			"status": "ready"
+		},
+		{
+			"id": "openid-configuration",
+			"package": "@well-known-js/openid-configuration",
+			"export": "openIdConfiguration",
+			"filename": "openid-configuration",
+			"path": "/.well-known/openid-configuration",
+			"contentType": "application/json",
+			"status": "ready"
 		}
 	]
 }

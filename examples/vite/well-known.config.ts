@@ -1,12 +1,22 @@
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
 import { defineConfig } from "@well-known-js/core";
+import { openIdConfiguration } from "@well-known-js/openid-configuration";
 import { passkeyEndpoints } from "@well-known-js/passkey-endpoints";
 import { securityTxt } from "@well-known-js/security-txt";
 import { webAuthn } from "@well-known-js/webauthn";
 
 export default defineConfig({
 	providers: [
+		openIdConfiguration({
+			issuer: "https://id.example.com",
+			authorization_endpoint: "https://id.example.com/authorize",
+			token_endpoint: "https://id.example.com/token",
+			jwks_uri: "https://id.example.com/jwks",
+			response_types_supported: ["code"],
+			subject_types_supported: ["public"],
+			id_token_signing_alg_values_supported: ["RS256"],
+		}),
 		passkeyEndpoints({
 			enroll: "https://example.com/account/passkeys/create",
 			manage: "https://example.com/account/passkeys",

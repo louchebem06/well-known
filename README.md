@@ -17,6 +17,7 @@ application's public assets directory.
 | `@well-known-js/security-txt`               | RFC 9116 security.txt provider and schema                      |
 | `@well-known-js/webauthn`                   | WebAuthn Related Origin Requests provider and schema           |
 | `@well-known-js/passkey-endpoints`          | W3C passkey endpoint discovery provider and schema             |
+| `@well-known-js/openid-configuration`       | OpenID Connect Discovery metadata provider and schema          |
 | `@well-known-js/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known-js/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
 | `@well-known-js/next`                       | Next.js adapter generating files in `public`                   |
@@ -299,6 +300,27 @@ The generated JSON document is available at:
 ```text
 /.well-known/passkey-endpoints
 ```
+
+## OpenID Connect discovery
+
+Install `@well-known-js/openid-configuration`, then configure the issuer, its endpoints and
+supported identifiers:
+
+```ts
+import { openIdConfiguration } from "@well-known-js/openid-configuration";
+
+openIdConfiguration({
+	issuer: "https://id.example.com",
+	authorization_endpoint: "https://id.example.com/authorize",
+	token_endpoint: "https://id.example.com/token",
+	jwks_uri: "https://id.example.com/jwks",
+	response_types_supported: ["code"],
+	subject_types_supported: ["public"],
+	id_token_signing_alg_values_supported: ["RS256"],
+});
+```
+
+The metadata is available at `/.well-known/openid-configuration`.
 
 ## Next.js
 
