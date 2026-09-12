@@ -11,20 +11,21 @@
 		"format:check": "prettier . --check",
 		"build": "pnpm -r build",
 		"test": "pnpm -r test",
-		"test:watch": "pnpm -r test:watch",
+		"test:watch": "pnpm -r --parallel test:watch",
 		"test:coverage": "pnpm -r test:coverage",
-		"typecheck": "pnpm -r typecheck"
+		"typecheck": "pnpm -r typecheck",
+		"dev": "pnpm -r --parallel dev"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@types/node": "^24.0.0",
-		"@vitest/coverage-v8": "^5.0.0",
+		"@vitest/coverage-v8": "^3.2.7",
 		"eslint": "^10.10.0",
 		"eslint-config-prettier": "^10.1.8",
 		"prettier": "^3.9.6",
 		"tsup": "^8.0.0",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.70.0",
-		"vitest": "^3.0.0"
+		"vitest": "^3.2.7"
 	}
 }

@@ -1,0 +1,38 @@
+{
+	"name": "@well-known/sveltekit",
+	"version": "1.0.0",
+	"description": "SvelteKit integration for generating .well-known files.",
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --format esm --dts --clean",
+		"dev": "tsup src/index.ts --format esm --dts --watch",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run --passWithNoTests"
+	},
+	"dependencies": {
+		"@well-known/core": "workspace:*",
+		"jiti": "^2.7.0"
+	},
+	"peerDependencies": {
+		"@sveltejs/kit": ">=2",
+		"vite": ">=5"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
