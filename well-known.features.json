@@ -94,6 +94,15 @@
 			"path": "/.well-known/oauth-protected-resource",
 			"contentType": "application/json",
 			"status": "ready"
+		},
+		{
+			"id": "oauth-authorization-server",
+			"package": "@well-known-js/oauth-authorization-server",
+			"export": "oauthAuthorizationServer",
+			"filename": "oauth-authorization-server",
+			"path": "/.well-known/oauth-authorization-server",
+			"contentType": "application/json",
+			"status": "ready"
 		}
 	]
 }
