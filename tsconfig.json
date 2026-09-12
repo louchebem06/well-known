@@ -4,6 +4,7 @@
 		{ "path": "./packages/core" },
 		{ "path": "./packages/apple-app-site-association" },
 		{ "path": "./packages/assetlinks" },
+		{ "path": "./packages/security-txt" },
 		{ "path": "./packages/vite" },
 		{ "path": "./packages/sveltekit" },
 		{ "path": "./packages/next" },

@@ -15,6 +15,7 @@
 		"@well-known-js/assetlinks": "workspace:*",
 		"@well-known-js/core": "workspace:*",
 		"@well-known-js/express": "workspace:*",
+		"@well-known-js/security-txt": "workspace:*",
 		"express": "^5.2.1"
 	},
 	"devDependencies": {
