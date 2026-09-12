@@ -1,0 +1,27 @@
+{
+	"name": "well-known",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier . --write",
+		"format:check": "prettier . --check",
+		"build": "pnpm -r build",
+		"test": "pnpm -r test",
+		"typecheck": "pnpm -r typecheck"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@types/node": "^24.0.0",
+		"eslint": "^10.10.0",
+		"eslint-config-prettier": "^10.1.8",
+		"prettier": "^3.9.6",
+		"tsup": "^8.0.0",
+		"typescript": "^5.0.0",
+		"typescript-eslint": "^8.70.0",
+		"vitest": "^3.0.0"
+	}
+}
