@@ -1,0 +1,26 @@
+{
+	"name": "express-example",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch src/main.ts",
+		"build": "tsc -p tsconfig.build.json",
+		"start": "node dist/src/main.js",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run --passWithNoTests"
+	},
+	"dependencies": {
+		"@well-known/apple-app-site-association": "workspace:*",
+		"@well-known/core": "workspace:*",
+		"@well-known/express": "workspace:*",
+		"express": "^5.2.1"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.0",
+		"@types/node": "^24.0.0",
+		"tsx": "^4.0.0",
+		"typescript": "^5.0.0",
+		"vitest": "^3.2.7"
+	}
+}

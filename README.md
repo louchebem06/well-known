@@ -1,7 +1,7 @@
 # well-known
 
 Type-safe packages for generating or serving files under `/.well-known/` in Vite, SvelteKit,
-Next.js, and NestJS projects.
+Next.js, NestJS, and Express projects.
 
 The project models each well-known file as a provider. Providers validate their configuration and
 generate the file body; framework integrations load the configuration and write the result into the
@@ -17,6 +17,7 @@ application's public assets directory.
 | `@well-known/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
 | `@well-known/next`                       | Next.js adapter generating files in `public`                   |
 | `@well-known/nestjs`                     | NestJS module exposing well-known routes directly              |
+| `@well-known/express`                    | Express middleware exposing well-known routes directly         |
 | `@well-known/assetlinks`                 | Reserved for Android Asset Links support                       |
 
 ## Requirements
@@ -26,6 +27,7 @@ application's public assets directory.
 - SvelteKit 2 or later when using `@well-known/sveltekit`
 - Next.js 15 or later when using `@well-known/next`
 - NestJS 11 or later when using `@well-known/nestjs`
+- Express 5 or later when using `@well-known/express`
 
 ## Installation
 
@@ -200,6 +202,31 @@ configuration is available through `WellKnownModule.forRootAsync(...)`.
 If the application uses a global prefix, exclude `/.well-known/*` when configuring that prefix so
 the standard URLs remain available at the domain root.
 
+## Express
+
+Install the Express middleware and the providers required by the project:
+
+```sh
+pnpm add @well-known/core @well-known/express
+pnpm add @well-known/apple-app-site-association
+```
+
+Register the middleware before the application's fallback routes:
+
+```ts
+import express from "express";
+import { wellKnown } from "@well-known/express";
+
+import wellKnownConfig from "../well-known.config.js";
+
+const app = express();
+
+app.use(wellKnown(wellKnownConfig));
+```
+
+The middleware serves configured `GET` and `HEAD` requests with their provider content types. Other
+methods and unknown paths are delegated to the next Express handler.
+
 ## Creating a provider
 
 A provider instance declares its destination and returns the generated file:
@@ -238,8 +265,8 @@ pnpm format:check
 pnpm lint
 ```
 
-Integration examples for SvelteKit, Next.js, and NestJS are available under `examples`. They are
-included in the workspace build.
+Integration examples for SvelteKit, Next.js, NestJS, and Express are available under `examples`.
+They are included in the workspace build.
 
 ## License
 
