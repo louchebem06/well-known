@@ -6,6 +6,7 @@
 		{ "path": "./packages/api-catalog" },
 		{ "path": "./packages/gpc" },
 		{ "path": "./packages/did-web" },
+		{ "path": "./packages/did-configuration" },
 		{ "path": "./packages/apple-app-site-association" },
 		{ "path": "./packages/assetlinks" },
 		{ "path": "./packages/security-txt" },

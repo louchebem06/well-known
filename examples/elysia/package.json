@@ -13,6 +13,7 @@
 		"@well-known-js/agent-card": "workspace:*",
 		"@well-known-js/api-catalog": "workspace:*",
 		"@well-known-js/did-web": "workspace:*",
+		"@well-known-js/did-configuration": "workspace:*",
 		"@well-known-js/gpc": "workspace:*",
 		"@elysiajs/node": "^1.4.0",
 		"@well-known-js/apple-app-site-association": "workspace:*",

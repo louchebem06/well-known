@@ -33,6 +33,15 @@
 	],
 	"features": [
 		{
+			"id": "did-configuration",
+			"package": "@well-known-js/did-configuration",
+			"export": "didConfiguration",
+			"filename": "did-configuration.json",
+			"path": "/.well-known/did-configuration.json",
+			"contentType": "application/json",
+			"status": "ready"
+		},
+		{
 			"id": "did-web",
 			"package": "@well-known-js/did-web",
 			"export": "didWeb",
