@@ -33,6 +33,15 @@
 	],
 	"features": [
 		{
+			"id": "mta-sts",
+			"package": "@well-known-js/mta-sts",
+			"export": "mtaSts",
+			"filename": "mta-sts.txt",
+			"path": "/.well-known/mta-sts.txt",
+			"contentType": "text/plain; charset=utf-8",
+			"status": "ready"
+		},
+		{
 			"id": "did-configuration",
 			"package": "@well-known-js/did-configuration",
 			"export": "didConfiguration",
