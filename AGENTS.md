@@ -13,6 +13,7 @@ The workspace is split into small, framework-agnostic packages:
 - `packages/webauthn`: WebAuthn Related Origin Requests provider and schema.
 - `packages/passkey-endpoints`: W3C passkey endpoint discovery provider and schema.
 - `packages/openid-configuration`: OpenID Connect Discovery metadata provider and schema.
+- `packages/oauth-protected-resource`: OAuth 2.0 Protected Resource Metadata provider and schema.
 - `packages/vite`: generic Vite plugin, configuration loader, and file generator.
 - `packages/sveltekit`: thin SvelteKit adapter around `@well-known-js/vite`.
 - `examples/sveltekit`: integration example used by the workspace build.

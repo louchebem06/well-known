@@ -85,6 +85,15 @@
 			"path": "/.well-known/openid-configuration",
 			"contentType": "application/json",
 			"status": "ready"
+		},
+		{
+			"id": "oauth-protected-resource",
+			"package": "@well-known-js/oauth-protected-resource",
+			"export": "oauthProtectedResource",
+			"filename": "oauth-protected-resource",
+			"path": "/.well-known/oauth-protected-resource",
+			"contentType": "application/json",
+			"status": "ready"
 		}
 	]
 }

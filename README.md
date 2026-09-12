@@ -18,6 +18,7 @@ application's public assets directory.
 | `@well-known-js/webauthn`                   | WebAuthn Related Origin Requests provider and schema           |
 | `@well-known-js/passkey-endpoints`          | W3C passkey endpoint discovery provider and schema             |
 | `@well-known-js/openid-configuration`       | OpenID Connect Discovery metadata provider and schema          |
+| `@well-known-js/oauth-protected-resource`   | OAuth 2.0 Protected Resource Metadata provider and schema      |
 | `@well-known-js/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known-js/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
 | `@well-known-js/next`                       | Next.js adapter generating files in `public`                   |
@@ -321,6 +322,32 @@ openIdConfiguration({
 ```
 
 The metadata is available at `/.well-known/openid-configuration`.
+
+## OAuth protected resource metadata
+
+Install the RFC 9728 provider to advertise the authorization servers and capabilities of an OAuth
+protected resource:
+
+```sh
+pnpm add @well-known-js/oauth-protected-resource
+```
+
+```ts
+import { oauthProtectedResource } from "@well-known-js/oauth-protected-resource";
+
+oauthProtectedResource({
+	resource: "https://api.example.com",
+	authorization_servers: ["https://id.example.com"],
+	scopes_supported: ["read", "write"],
+	bearer_methods_supported: ["header"],
+	resource_documentation: "https://api.example.com/docs",
+});
+```
+
+The metadata is available at `/.well-known/oauth-protected-resource`. If the resource identifier
+contains a path, it is appended to the metadata endpoint according to RFC 9728; for example,
+`https://api.example.com/public/mcp` uses
+`/.well-known/oauth-protected-resource/public/mcp`.
 
 ## Next.js
 
