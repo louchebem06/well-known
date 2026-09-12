@@ -1,4 +1,5 @@
 import { agentCard } from "@well-known-js/agent-card";
+import { apiCatalog } from "@well-known-js/api-catalog";
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
 import { defineConfig } from "@well-known-js/core";
@@ -10,6 +11,25 @@ import { securityTxt } from "@well-known-js/security-txt";
 import { webAuthn } from "@well-known-js/webauthn";
 export default defineConfig({
 	providers: [
+		apiCatalog({
+			linkset: [
+				{
+					anchor: "https://developer.example.com/apis/payments",
+					"service-desc": [
+						{
+							href: "https://developer.example.com/apis/payments/openapi.yaml",
+							type: "application/yaml",
+						},
+					],
+					"service-doc": [
+						{
+							href: "https://developer.example.com/apis/payments/docs",
+							type: "text/html",
+						},
+					],
+				},
+			],
+		}),
 		agentCard({
 			name: "Example Agent",
 			description: "Demonstrates Agent2Agent discovery.",
