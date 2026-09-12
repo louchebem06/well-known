@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"target": "ES2022",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"strict": true,
+		"skipLibCheck": true
+	},
+	"references": [
+		{
+			"path": "../core"
+		},
+		{
+			"path": "../node"
+		}
+	],
+	"include": ["src/**/*.ts"]
+}

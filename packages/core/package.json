@@ -1,6 +1,6 @@
 {
 	"name": "@well-known/core",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Core utilities and types for generating .well-known files.",
 	"license": "MIT",
 	"type": "module",
@@ -16,10 +16,12 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup src/index.ts --format esm --dts --clean",
-		"dev": "tsup src/index.ts --format esm --dts --watch",
-		"typecheck": "tsc --noEmit",
-		"test": "vitest run"
+		"build": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --clean",
+		"dev": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --watch",
+		"typecheck": "tsc -b",
+		"test": "vitest run --passWithNoTests",
+		"test:watch": "vitest",
+		"test:coverage": "vitest run --coverage"
 	},
 	"engines": {
 		"node": ">=20"

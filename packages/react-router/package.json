@@ -1,0 +1,43 @@
+{
+	"name": "@well-known/react-router",
+	"version": "1.0.0",
+	"description": "React Router resource route handlers for .well-known routes.",
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --clean",
+		"dev": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --watch",
+		"typecheck": "tsc -b",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"@well-known/core": "workspace:*",
+		"@well-known/node": "workspace:*"
+	},
+	"peerDependencies": {
+		"react-router": ">=7 <8"
+	},
+	"peerDependenciesMeta": {
+		"react-router": {
+			"optional": true
+		}
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

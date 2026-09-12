@@ -1,0 +1,41 @@
+{
+	"name": "@well-known/fastify",
+	"version": "1.0.0",
+	"description": "Fastify plugin for serving .well-known routes.",
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --clean",
+		"dev": "tsup src/index.ts --tsconfig tsconfig.build.json --format esm --dts --watch",
+		"typecheck": "tsc -b",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"@well-known/core": "workspace:*",
+		"fastify-plugin": "^6.0.0"
+	},
+	"peerDependencies": {
+		"fastify": ">=5 <6"
+	},
+	"devDependencies": {
+		"fastify": "^5.12.4"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

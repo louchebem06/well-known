@@ -1,0 +1,22 @@
+{
+	"name": "vite-example",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --port 5100 --strictPort",
+		"build": "vite build",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run --passWithNoTests"
+	},
+	"dependencies": {
+		"@well-known/apple-app-site-association": "workspace:*",
+		"@well-known/core": "workspace:*",
+		"@well-known/vite": "workspace:*",
+		"vite": "^8.0.16"
+	},
+	"devDependencies": {
+		"typescript": "^5.0.0",
+		"vitest": "^3.2.7"
+	}
+}

@@ -1,17 +1,25 @@
 {
-	"compilerOptions": {
-		"target": "ES2022",
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext",
-		"strict": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"declaration": true,
-		"declarationMap": true,
-		"sourceMap": true,
-		"noUncheckedIndexedAccess": true,
-		"noImplicitOverride": true
-	},
-	"exclude": ["node_modules", "dist", "coverage"]
+	"files": [],
+	"references": [
+		{ "path": "./packages/core" },
+		{ "path": "./packages/apple-app-site-association" },
+		{ "path": "./packages/assetlinks" },
+		{ "path": "./packages/vite" },
+		{ "path": "./packages/sveltekit" },
+		{ "path": "./packages/next" },
+		{ "path": "./packages/nestjs" },
+		{ "path": "./packages/express" },
+		{ "path": "./packages/nuxt" },
+		{ "path": "./packages/node" },
+		{ "path": "./packages/fastify" },
+		{ "path": "./packages/hono" },
+		{ "path": "./packages/koa" },
+		{ "path": "./packages/elysia" },
+		{ "path": "./packages/tanstack-start" },
+		{ "path": "./packages/react-router" },
+		{ "path": "./packages/solidstart" },
+		{ "path": "./packages/angular" },
+		{ "path": "./packages/adonisjs" },
+		{ "path": "./packages/astro" }
+	]
 }

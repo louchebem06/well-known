@@ -1,0 +1,54 @@
+{
+	"technicalPackages": ["@well-known/core"],
+	"integrations": [
+		{ "id": "adonisjs", "package": "@well-known/adonisjs", "example": "adonisjs" },
+		{ "id": "angular", "package": "@well-known/angular", "example": "angular" },
+		{ "id": "astro", "package": "@well-known/astro", "example": "astro" },
+		{ "id": "elysia", "package": "@well-known/elysia", "example": "elysia" },
+		{ "id": "express", "package": "@well-known/express", "example": "express" },
+		{ "id": "fastify", "package": "@well-known/fastify", "example": "fastify" },
+		{ "id": "hono", "package": "@well-known/hono", "example": "hono" },
+		{ "id": "koa", "package": "@well-known/koa", "example": "koa" },
+		{ "id": "nestjs", "package": "@well-known/nestjs", "example": "nestjs" },
+		{ "id": "next", "package": "@well-known/next", "example": "next" },
+		{ "id": "node", "package": "@well-known/node", "example": "node" },
+		{ "id": "nuxt", "package": "@well-known/nuxt", "example": "nuxt" },
+		{
+			"id": "react-router",
+			"package": "@well-known/react-router",
+			"example": "react-router"
+		},
+		{ "id": "solidstart", "package": "@well-known/solidstart", "example": "solidstart" },
+		{
+			"id": "sveltekit",
+			"package": "@well-known/sveltekit",
+			"example": "sveltekit"
+		},
+		{
+			"id": "tanstack-start",
+			"package": "@well-known/tanstack-start",
+			"example": "tanstack-start"
+		},
+		{ "id": "vite", "package": "@well-known/vite", "example": "vite" }
+	],
+	"features": [
+		{
+			"id": "apple-app-site-association",
+			"package": "@well-known/apple-app-site-association",
+			"export": "appleAppSiteAssociation",
+			"filename": "apple-app-site-association",
+			"path": "/.well-known/apple-app-site-association",
+			"contentType": "application/json",
+			"status": "ready"
+		},
+		{
+			"id": "assetlinks",
+			"package": "@well-known/assetlinks",
+			"export": "assetLinks",
+			"filename": "assetlinks.json",
+			"path": "/.well-known/assetlinks.json",
+			"contentType": "application/json",
+			"status": "development"
+		}
+	]
+}
