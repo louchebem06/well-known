@@ -15,6 +15,8 @@
 		"release:prepare": "node --import tsx scripts/prepare-release.ts && pnpm install --lockfile-only",
 		"release:publish": "node --import tsx scripts/publish-release.ts",
 		"release:github": "node --import tsx scripts/create-github-releases.ts",
+		"standards:check": "node --import tsx scripts/check-standards.ts",
+		"standards:refresh": "node --import tsx scripts/check-standards.ts --refresh",
 		"test:watch": "pnpm -r --parallel test:watch",
 		"test:coverage": "pnpm -r test:coverage",
 		"typecheck": "pnpm -r typecheck && tsc -p scripts/tsconfig.json",

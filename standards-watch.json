@@ -1,0 +1,130 @@
+[
+	{
+		"id": "apple-associated-domains",
+		"name": "Apple Supporting associated domains",
+		"package": "@well-known-js/apple-app-site-association",
+		"url": "https://developer.apple.com/tutorials/data/documentation/xcode/supporting-associated-domains.json",
+		"format": "json",
+		"baseline": "b68db130e5cd7e6eb2ef4320781659bc74b89365ca31faf7c6cc695a7d407fab"
+	},
+	{
+		"id": "google-digital-asset-links",
+		"name": "Google Digital Asset Links statement syntax",
+		"package": "@well-known-js/assetlinks",
+		"url": "https://developers.google.com/digital-asset-links/v1/statements?hl=en",
+		"format": "html",
+		"baseline": "66381687d84f16685bda7843d7ce4e5bf4b68075ec4839715086762c58a6f9d5"
+	},
+	{
+		"id": "a2a-agent-card",
+		"name": "A2A Agent Card specification",
+		"package": "@well-known-js/agent-card",
+		"url": "https://raw.githubusercontent.com/a2aproject/A2A/main/docs/specification.md",
+		"format": "text",
+		"baseline": "84b15b49ff9f75b29f22d2427f7a191098f0e1b562aa089eb719cff9adec6084"
+	},
+	{
+		"id": "w3c-gpc",
+		"name": "W3C Global Privacy Control",
+		"package": "@well-known-js/gpc",
+		"url": "https://raw.githubusercontent.com/w3c/gpc/main/index.html",
+		"format": "text",
+		"baseline": "186ace87922a7840591a08d41f9d9998d1aea685bdcdb5a77b1d06f1d20ba5df"
+	},
+	{
+		"id": "did-web",
+		"name": "did:web method specification",
+		"package": "@well-known-js/did-web",
+		"url": "https://raw.githubusercontent.com/w3c-ccg/did-method-web/main/index.html",
+		"format": "text",
+		"baseline": "896610646ae313e38b6b7a88fb68d6ee79e8c97ee6de1f3eca677a2587d02bbc"
+	},
+	{
+		"id": "did-configuration",
+		"name": "DIF DID Configuration specification",
+		"package": "@well-known-js/did-configuration",
+		"url": "https://raw.githubusercontent.com/decentralized-identity/well-known-did-configuration/master/resources/did-configuration/index.html",
+		"format": "text",
+		"baseline": "0a278af17eacbf5690808654ff718e6ddd61802cf5ff3c4d7c8ef6761219d17f"
+	},
+	{
+		"id": "w3c-webauthn-related-origins",
+		"name": "W3C WebAuthn Level 3",
+		"package": "@well-known-js/webauthn",
+		"url": "https://raw.githubusercontent.com/w3c/webauthn/main/index.bs",
+		"format": "text",
+		"baseline": "5065367d3c022420853f446d18ec49fde2e0356f5556d2ec989edc3d4ad52088"
+	},
+	{
+		"id": "w3c-passkey-endpoints",
+		"name": "W3C Passkey Endpoints",
+		"package": "@well-known-js/passkey-endpoints",
+		"url": "https://raw.githubusercontent.com/w3c/webappsec-passkey-endpoints/main/index.bs",
+		"format": "text",
+		"baseline": "6cdfa7282204ba3f70cce701651fcb5dcaa4dffb25962a87c141fea2b127f64d"
+	},
+	{
+		"id": "openid-connect-discovery",
+		"name": "OpenID Connect Discovery 1.0",
+		"package": "@well-known-js/openid-configuration",
+		"url": "https://openid.net/specs/openid-connect-discovery-1_0.html",
+		"format": "html",
+		"baseline": "ec29bb89eb035e6e8f487b5b3de294421eee557c2c2976e814d31a178c5c923a"
+	},
+	{
+		"id": "rfc-9264-linkset",
+		"name": "RFC 9264 Linkset",
+		"package": "@well-known-js/api-catalog",
+		"url": "https://www.rfc-editor.org/info/rfc9264",
+		"format": "html",
+		"baseline": "8a10fe09c232f3da67dee1d8a3b681ef821eaaa67440b793c9272b59eada6fe7"
+	},
+	{
+		"id": "rfc-9727-api-catalog",
+		"name": "RFC 9727 API Catalog",
+		"package": "@well-known-js/api-catalog",
+		"url": "https://www.rfc-editor.org/info/rfc9727",
+		"format": "html",
+		"baseline": "b1fe9e017f6b57e0f976f2e4ba682ba27fc6316d2d027f19cf563a3486508710"
+	},
+	{
+		"id": "rfc-8461-mta-sts",
+		"name": "RFC 8461 MTA-STS",
+		"package": "@well-known-js/mta-sts",
+		"url": "https://www.rfc-editor.org/info/rfc8461",
+		"format": "html",
+		"baseline": "3023fcb57bf074b40ed83e0ec302302b24061dc78fa20bd81f6e43440e7e3bd8"
+	},
+	{
+		"id": "rfc-9472-sbom",
+		"name": "RFC 9472 SBOM",
+		"package": "@well-known-js/sbom",
+		"url": "https://www.rfc-editor.org/info/rfc9472",
+		"format": "html",
+		"baseline": "e68515be1fd761da846e6b922ce5ec3387313b1a1b1e7745d7298f4c76639190"
+	},
+	{
+		"id": "rfc-8414-oauth-metadata",
+		"name": "RFC 8414 OAuth Authorization Server Metadata",
+		"package": "@well-known-js/oauth-authorization-server",
+		"url": "https://www.rfc-editor.org/info/rfc8414",
+		"format": "html",
+		"baseline": "4d1f8ac5a7b5d873ea02bb2f80e0617df54558294d36f5c854b40939efbd664b"
+	},
+	{
+		"id": "rfc-9728-oauth-protected-resource",
+		"name": "RFC 9728 OAuth Protected Resource Metadata",
+		"package": "@well-known-js/oauth-protected-resource",
+		"url": "https://www.rfc-editor.org/info/rfc9728",
+		"format": "html",
+		"baseline": "5c23c6502ede8a15525d3efcb2adab372640c99aa2d059b95702f6c4d581277e"
+	},
+	{
+		"id": "rfc-9116-security-txt",
+		"name": "RFC 9116 security.txt",
+		"package": "@well-known-js/security-txt",
+		"url": "https://www.rfc-editor.org/info/rfc9116",
+		"format": "html",
+		"baseline": "f725b3b0d8f4a53d49f4effb4a5a3c8efe22b1fb67534161e92bd208b1080f4a"
+	}
+]

@@ -609,6 +609,17 @@ pnpm release:publish
 pnpm release:github
 ```
 
+## Monitoring upstream standards
+
+The **Standards watch** workflow checks the living specifications and vendor documentation used by
+the provider packages every Monday. When a source changes, it opens a labeled GitHub issue for the
+affected package without duplicating an issue for the same upstream revision. After reviewing a
+change and updating the implementation when necessary, refresh and commit the recorded fingerprints:
+
+```sh
+pnpm standards:refresh
+```
+
 ## License
 
 [MIT](./LICENSE)
