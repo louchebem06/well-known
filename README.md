@@ -13,6 +13,8 @@ application's public assets directory.
 | ------------------------------------------- | -------------------------------------------------------------- |
 | `@well-known-js/core`                       | Provider types and the `defineConfig` helper                   |
 | `@well-known-js/apple-app-site-association` | Apple App Site Association provider and schema                 |
+| `@well-known-js/assetlinks`                 | Android Digital Asset Links provider and schema                |
+| `@well-known-js/security-txt`               | RFC 9116 security.txt provider and schema                      |
 | `@well-known-js/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known-js/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
 | `@well-known-js/next`                       | Next.js adapter generating files in `public`                   |
@@ -30,7 +32,6 @@ application's public assets directory.
 | `@well-known-js/elysia`                     | Elysia plugin exposing well-known routes                       |
 | `@well-known-js/adonisjs`                   | AdonisJS middleware exposing well-known routes                 |
 | `@well-known-js/node`                       | Native Node.js and Fetch handlers                              |
-| `@well-known-js/assetlinks`                 | Reserved for Android Asset Links support                       |
 
 ## Requirements
 
@@ -217,6 +218,34 @@ file is available at:
 
 ```text
 /.well-known/assetlinks.json
+```
+
+## Security.txt
+
+Install the RFC 9116 provider:
+
+```sh
+pnpm add @well-known-js/security-txt
+```
+
+Add at least one contact and a future expiry date to `well-known.config.ts`:
+
+```ts
+import { securityTxt } from "@well-known-js/security-txt";
+
+securityTxt({
+	contacts: ["mailto:security@example.com"],
+	expires: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000),
+	canonical: ["https://example.com/.well-known/security.txt"],
+	policy: ["https://example.com/security-policy"],
+	preferredLanguages: ["en", "fr"],
+});
+```
+
+The generated RFC 9116 document is served as `text/plain; charset=utf-8` at:
+
+```text
+/.well-known/security.txt
 ```
 
 ## Next.js

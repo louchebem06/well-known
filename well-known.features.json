@@ -49,6 +49,15 @@
 			"path": "/.well-known/assetlinks.json",
 			"contentType": "application/json",
 			"status": "ready"
+		},
+		{
+			"id": "security-txt",
+			"package": "@well-known-js/security-txt",
+			"export": "securityTxt",
+			"filename": "security.txt",
+			"path": "/.well-known/security.txt",
+			"contentType": "text/plain; charset=utf-8",
+			"status": "ready"
 		}
 	]
 }
