@@ -14,7 +14,8 @@
 		"test:watch": "pnpm -r --parallel test:watch",
 		"test:coverage": "pnpm -r test:coverage",
 		"typecheck": "pnpm -r typecheck",
-		"dev": "pnpm -r --parallel dev"
+		"dev": "pnpm --filter './examples/*' --parallel --stream dev",
+		"dev:packages": "pnpm --filter './packages/*' --parallel dev"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",

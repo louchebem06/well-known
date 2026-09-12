@@ -1,7 +1,7 @@
 # well-known
 
-Type-safe packages for generating or serving files under `/.well-known/` in Vite, SvelteKit,
-Next.js, NestJS, and Express projects.
+Type-safe packages for generating or serving files under `/.well-known/` across frontend and server
+frameworks.
 
 The project models each well-known file as a provider. Providers validate their configuration and
 generate the file body; framework integrations load the configuration and write the result into the
@@ -16,8 +16,20 @@ application's public assets directory.
 | `@well-known/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
 | `@well-known/next`                       | Next.js adapter generating files in `public`                   |
+| `@well-known/nuxt`                       | Nuxt module generating files in `public`                       |
 | `@well-known/nestjs`                     | NestJS module exposing well-known routes directly              |
 | `@well-known/express`                    | Express middleware exposing well-known routes directly         |
+| `@well-known/tanstack-start`             | TanStack Start server route handlers                           |
+| `@well-known/fastify`                    | Fastify plugin exposing well-known routes                      |
+| `@well-known/hono`                       | Hono middleware exposing well-known routes                     |
+| `@well-known/astro`                      | Astro integration generating public files                      |
+| `@well-known/react-router`               | React Router resource route loader                             |
+| `@well-known/angular`                    | Angular SSR server middleware                                  |
+| `@well-known/solidstart`                 | SolidStart server route handlers                               |
+| `@well-known/koa`                        | Koa middleware exposing well-known routes                      |
+| `@well-known/elysia`                     | Elysia plugin exposing well-known routes                       |
+| `@well-known/adonisjs`                   | AdonisJS middleware exposing well-known routes                 |
+| `@well-known/node`                       | Native Node.js and Fetch handlers                              |
 | `@well-known/assetlinks`                 | Reserved for Android Asset Links support                       |
 
 ## Requirements
@@ -26,8 +38,41 @@ application's public assets directory.
 - Vite 5 or later for the Vite integrations
 - SvelteKit 2 or later when using `@well-known/sveltekit`
 - Next.js 15 or later when using `@well-known/next`
+- Nuxt 3 or later when using `@well-known/nuxt`
 - NestJS 11 or later when using `@well-known/nestjs`
 - Express 5 or later when using `@well-known/express`
+
+## Run the examples
+
+Install the workspace dependencies, then start every example at once:
+
+```sh
+pnpm install
+pnpm run dev
+```
+
+Each application uses a fixed, unique port. Test its Apple App Site Association response at the
+listed URL:
+
+| Integration    | Port | AASA URL                                                       |
+| -------------- | ---- | -------------------------------------------------------------- |
+| Vite           | 5100 | `http://localhost:5100/.well-known/apple-app-site-association` |
+| SvelteKit      | 5101 | `http://localhost:5101/.well-known/apple-app-site-association` |
+| Next.js        | 5102 | `http://localhost:5102/.well-known/apple-app-site-association` |
+| Nuxt           | 5103 | `http://localhost:5103/.well-known/apple-app-site-association` |
+| Astro          | 5104 | `http://localhost:5104/.well-known/apple-app-site-association` |
+| Express        | 5105 | `http://localhost:5105/.well-known/apple-app-site-association` |
+| NestJS         | 5106 | `http://localhost:5106/.well-known/apple-app-site-association` |
+| Fastify        | 5107 | `http://localhost:5107/.well-known/apple-app-site-association` |
+| Hono           | 5108 | `http://localhost:5108/.well-known/apple-app-site-association` |
+| Koa            | 5109 | `http://localhost:5109/.well-known/apple-app-site-association` |
+| Elysia         | 5110 | `http://localhost:5110/.well-known/apple-app-site-association` |
+| Node.js        | 5111 | `http://localhost:5111/.well-known/apple-app-site-association` |
+| TanStack Start | 5112 | `http://localhost:5112/.well-known/apple-app-site-association` |
+| React Router   | 5113 | `http://localhost:5113/.well-known/apple-app-site-association` |
+| Angular SSR    | 5114 | `http://localhost:5114/.well-known/apple-app-site-association` |
+| SolidStart     | 5115 | `http://localhost:5115/.well-known/apple-app-site-association` |
+| AdonisJS       | 5116 | `http://localhost:5116/.well-known/apple-app-site-association` |
 
 ## Installation
 
@@ -146,32 +191,54 @@ pnpm add @well-known/core @well-known/next
 pnpm add @well-known/apple-app-site-association
 ```
 
-Wrap the Next.js configuration in `next.config.ts`:
+Create an App Router catch-all route at `app/.well-known/[...path]/route.ts`:
 
 ```ts
-import { withWellKnown } from "@well-known/next";
-import type { NextConfig } from "next";
+import { createWellKnownRouteHandlers } from "@well-known/next";
 
-const nextConfig: NextConfig = {};
+import wellKnownConfig from "../../../well-known.config";
 
-export default withWellKnown()(nextConfig);
+export const { GET, HEAD } = createWellKnownRouteHandlers(wellKnownConfig);
 ```
 
-The adapter reads `well-known.config.ts` and writes generated files to `public`. It also configures
-the providers' content types. During `next dev`, files are regenerated when the well-known
-configuration changes.
+The handlers serve the provider body directly with its content type and return 404 for an unknown
+well-known path. Because the configuration is imported by the route, Next.js tracks it as part of
+the application build.
 
-Both paths can be customized relative to the Next.js project root:
+## Nuxt
+
+Install the Nuxt module and the providers required by the project:
+
+```sh
+pnpm add @well-known/core @well-known/nuxt
+pnpm add @well-known/apple-app-site-association
+```
+
+Register the module in `nuxt.config.ts`:
 
 ```ts
-export default withWellKnown({
-	configFile: "config/well-known.ts",
-	publicDir: "assets",
-})(nextConfig);
+import wellKnown from "@well-known/nuxt";
+
+export default defineNuxtConfig({
+	modules: [wellKnown],
+});
 ```
 
-Changing provider content is supported without restarting the development server. Restart Next.js
-after changing the configured provider paths so its header routes can be rebuilt.
+The module reads `well-known.config.ts`, writes generated files to Nuxt's public directory, and
+adds their content types to Nitro route rules. Files are regenerated when the configuration changes
+during development.
+
+Both paths can be customized through the module configuration:
+
+```ts
+export default defineNuxtConfig({
+	modules: [wellKnown],
+	wellKnown: {
+		configFile: "config/well-known.ts",
+		publicDir: "public",
+	},
+});
+```
 
 ## NestJS
 
@@ -227,6 +294,38 @@ app.use(wellKnown(wellKnownConfig));
 The middleware serves configured `GET` and `HEAD` requests with their provider content types. Other
 methods and unknown paths are delegated to the next Express handler.
 
+## Other server integrations
+
+All server integrations consume the same `WellKnownConfig` and preserve provider paths, bodies, and
+content types:
+
+| Ecosystem    | Registration API                                   |
+| ------------ | -------------------------------------------------- |
+| Node.js      | `createWellKnownNodeHandler(config)`               |
+| Fetch        | `createWellKnownFetchHandler(config)`              |
+| Fastify      | `fastify.register(wellKnown, { config })`          |
+| Hono         | `app.use(wellKnown(config))`                       |
+| Koa          | `app.use(wellKnown(config))`                       |
+| Elysia       | `app.use(wellKnown(config))`                       |
+| TanStack     | `createWellKnownServerHandler(config)`             |
+| React Router | `createWellKnownLoader(config)`                    |
+| SolidStart   | `createWellKnownRouteHandlers(config)`             |
+| Angular SSR  | `wellKnown(config)` before the Angular SSR handler |
+| AdonisJS     | `registerWellKnownRoutes(router, config)`          |
+
+Astro uses a build integration instead:
+
+```ts
+import wellKnown from "@well-known/astro";
+
+export default defineConfig({
+	integrations: [wellKnown()],
+});
+```
+
+It generates the configured files in Astro's public directory and regenerates them when the
+configuration changes during development.
+
 ## Creating a provider
 
 A provider instance declares its destination and returns the generated file:
@@ -265,8 +364,9 @@ pnpm format:check
 pnpm lint
 ```
 
-Integration examples for SvelteKit, Next.js, NestJS, and Express are available under `examples`.
-They are included in the workspace build.
+Integration examples for SvelteKit, Next.js, Nuxt, NestJS, and Express are available under
+`examples`. They are included in the workspace build; the remaining adapters have focused package
+tests for their native registration APIs.
 
 ## License
 

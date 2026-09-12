@@ -1,8 +1,8 @@
-import { withWellKnown } from "@well-known/next";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+	agentRules: false,
 	reactStrictMode: true,
 };
 
-export default withWellKnown()(nextConfig);
+export default nextConfig;

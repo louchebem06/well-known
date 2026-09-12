@@ -1,7 +1,7 @@
 {
 	"name": "@well-known/next",
 	"version": "1.0.0",
-	"description": "Next.js integration for generating .well-known files.",
+	"description": "Next.js App Router handlers for serving .well-known routes.",
 	"license": "MIT",
 	"type": "module",
 	"main": "./dist/index.js",
@@ -24,7 +24,7 @@
 	},
 	"dependencies": {
 		"@well-known/core": "workspace:*",
-		"jiti": "^2.7.0"
+		"@well-known/node": "workspace:*"
 	},
 	"peerDependencies": {
 		"next": ">=15 <17"
