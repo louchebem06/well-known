@@ -1,11 +1,17 @@
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
 import { defineConfig } from "@well-known-js/core";
+import { passkeyEndpoints } from "@well-known-js/passkey-endpoints";
 import { securityTxt } from "@well-known-js/security-txt";
 import { webAuthn } from "@well-known-js/webauthn";
 
 export default defineConfig({
 	providers: [
+		passkeyEndpoints({
+			enroll: "https://example.com/account/passkeys/create",
+			manage: "https://example.com/account/passkeys",
+			prfUsageDetails: "https://example.com/help/passkeys",
+		}),
 		webAuthn({
 			origins: ["https://example.co.uk", "https://login.example.com"],
 		}),

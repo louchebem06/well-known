@@ -62,6 +62,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -96,6 +99,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -130,6 +136,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -167,6 +176,9 @@ importers:
       '@well-known-js/elysia':
         specifier: workspace:*
         version: link:../../packages/elysia
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -204,6 +216,9 @@ importers:
       '@well-known-js/express':
         specifier: workspace:*
         version: link:../../packages/express
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -244,6 +259,9 @@ importers:
       '@well-known-js/fastify':
         specifier: workspace:*
         version: link:../../packages/fastify
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -284,6 +302,9 @@ importers:
       '@well-known-js/hono':
         specifier: workspace:*
         version: link:../../packages/hono
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -321,6 +342,9 @@ importers:
       '@well-known-js/koa':
         specifier: workspace:*
         version: link:../../packages/koa
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -370,6 +394,9 @@ importers:
       '@well-known-js/nestjs':
         specifier: workspace:*
         version: link:../../packages/nestjs
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -410,6 +437,9 @@ importers:
       '@well-known-js/next':
         specifier: workspace:*
         version: link:../../packages/next
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -456,6 +486,9 @@ importers:
       '@well-known-js/node':
         specifier: workspace:*
         version: link:../../packages/node
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -490,6 +523,9 @@ importers:
       '@well-known-js/nuxt':
         specifier: workspace:*
         version: link:../../packages/nuxt
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -527,6 +563,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/react-router':
         specifier: workspace:*
         version: link:../../packages/react-router
@@ -561,6 +600,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -595,6 +637,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -638,6 +683,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -672,6 +720,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/passkey-endpoints':
+        specifier: workspace:*
+        version: link:../../packages/passkey-endpoints
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
@@ -874,6 +925,15 @@ importers:
       nuxt:
         specifier: '>=3 <5'
         version: 3.21.11(@oxc-project/types@0.149.0)(@parcel/watcher@2.6.0)(@types/node@24.13.4)(@vue/compiler-sfc@3.5.42)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.2)(eslint@10.10.0(jiti@2.7.0))(ioredis@5.11.1)(lightningcss@1.33.0)(magicast@0.5.5)(optionator@0.9.4)(rolldown@1.2.8)(rollup-plugin-visualizer@7.1.1(rolldown@1.2.8)(rollup@4.63.2))(rollup@4.63.2)(terser@5.51.2)(tsx@4.23.13)(typescript@6.0.3)(vite@8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1))(webpack@5.106.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.28))(yaml@2.9.1)
+
+  packages/passkey-endpoints:
+    dependencies:
+      '@well-known-js/core':
+        specifier: workspace:*
+        version: link:../core
+      zod:
+        specifier: ^4.6.2
+        version: 4.6.2
 
   packages/react-router:
     dependencies:
