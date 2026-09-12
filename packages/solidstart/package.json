@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/solidstart",
+	"name": "@well-known-js/solidstart",
 	"version": "1.0.0",
 	"description": "SolidStart server route handlers for .well-known routes.",
 	"license": "MIT",
@@ -28,8 +28,8 @@
 		"test": "vitest run"
 	},
 	"dependencies": {
-		"@well-known/core": "workspace:*",
-		"@well-known/node": "workspace:*"
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/node": "workspace:*"
 	},
 	"peerDependencies": {
 		"@solidjs/start": ">=1 <2"

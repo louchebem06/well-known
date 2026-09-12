@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 import { describe, expect, it, vi } from "vitest";
 
 import { createWellKnownFetchHandler } from "./fetch.js";

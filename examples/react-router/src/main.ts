@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { createWellKnownLoader } from "@well-known/react-router";
+import { createWellKnownLoader } from "@well-known-js/react-router";
 import config from "../well-known.config.js";
 
 const loader = createWellKnownLoader(config);

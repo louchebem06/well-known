@@ -1,4 +1,4 @@
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 import { describe, expect, it } from "vitest";
 
 import { createWellKnownRouteHandlers } from "./route.js";

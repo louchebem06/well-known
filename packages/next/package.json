@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/next",
+	"name": "@well-known-js/next",
 	"version": "1.0.0",
 	"description": "Next.js App Router handlers for serving .well-known routes.",
 	"license": "MIT",
@@ -28,8 +28,8 @@
 		"test": "vitest run"
 	},
 	"dependencies": {
-		"@well-known/core": "workspace:*",
-		"@well-known/node": "workspace:*"
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/node": "workspace:*"
 	},
 	"peerDependencies": {
 		"next": ">=15 <17"

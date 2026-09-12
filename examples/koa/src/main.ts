@@ -1,5 +1,5 @@
 import Koa from "koa";
-import { wellKnown } from "@well-known/koa";
+import { wellKnown } from "@well-known-js/koa";
 import config from "../well-known.config.js";
 
 const app = new Koa();

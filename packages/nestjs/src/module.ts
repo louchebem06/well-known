@@ -1,6 +1,6 @@
 import type { DynamicModule, Provider } from "@nestjs/common";
 import { Module } from "@nestjs/common";
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 
 import { WELL_KNOWN_CONFIG } from "./constants.js";
 import { WellKnownController } from "./controller.js";

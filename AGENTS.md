@@ -10,11 +10,11 @@ The workspace is split into small, framework-agnostic packages:
 - `packages/apple-app-site-association`: Apple App Site Association provider and schema.
 - `packages/assetlinks`: reserved package for Android Asset Links support.
 - `packages/vite`: generic Vite plugin, configuration loader, and file generator.
-- `packages/sveltekit`: thin SvelteKit adapter around `@well-known/vite`.
+- `packages/sveltekit`: thin SvelteKit adapter around `@well-known-js/vite`.
 - `examples/sveltekit`: integration example used by the workspace build.
 
-Keep generic generation and Vite behavior in `@well-known/vite`. SvelteKit-specific defaults belong
-in `@well-known/sveltekit`; do not duplicate the Vite implementation there.
+Keep generic generation and Vite behavior in `@well-known-js/vite`. SvelteKit-specific defaults belong
+in `@well-known-js/sveltekit`; do not duplicate the Vite implementation there.
 
 ## Development commands
 
@@ -32,8 +32,8 @@ pnpm lint
 Run a command for one package with a workspace filter, for example:
 
 ```sh
-pnpm --filter @well-known/vite typecheck
-pnpm --filter @well-known/apple-app-site-association test
+pnpm --filter @well-known-js/vite typecheck
+pnpm --filter @well-known-js/apple-app-site-association test
 ```
 
 Before handing off a change, run the checks relevant to the edited code. For cross-package changes,

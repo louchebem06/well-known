@@ -1,5 +1,5 @@
 import type { Plugin } from "vite";
-import { wellKnown as wellKnownVite } from "@well-known/vite";
+import { wellKnown as wellKnownVite } from "@well-known-js/vite";
 import type { WellKnownSvelteKitOptions } from "./types.js";
 
 export function wellKnown(options: WellKnownSvelteKitOptions = {}): Plugin {
@@ -10,6 +10,6 @@ export function wellKnown(options: WellKnownSvelteKitOptions = {}): Plugin {
 
 	return {
 		...plugin,
-		name: "@well-known/sveltekit",
+		name: "@well-known-js/sveltekit",
 	};
 }

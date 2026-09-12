@@ -1,4 +1,4 @@
-import type { WellKnownProvider, WellKnownProviderInstance } from "@well-known/core";
+import type { WellKnownProvider, WellKnownProviderInstance } from "@well-known-js/core";
 
 import { generateAppleAppSiteAssociationFile } from "./generator.js";
 import type { AppleAppSiteAssociation } from "./types.js";

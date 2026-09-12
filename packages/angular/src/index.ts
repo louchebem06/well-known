@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
-import type { WellKnownConfig } from "@well-known/core";
-import { createWellKnownNodeHandler } from "@well-known/node";
+import type { WellKnownConfig } from "@well-known-js/core";
+import { createWellKnownNodeHandler } from "@well-known-js/node";
 
 export type AngularSsrNext = () => void;
 

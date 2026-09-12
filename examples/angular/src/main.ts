@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { wellKnown } from "@well-known/angular";
+import { wellKnown } from "@well-known-js/angular";
 import config from "../well-known.config.js";
 
 const middleware = wellKnown(config);

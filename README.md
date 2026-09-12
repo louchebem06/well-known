@@ -9,38 +9,38 @@ application's public assets directory.
 
 ## Packages
 
-| Package                                  | Purpose                                                        |
-| ---------------------------------------- | -------------------------------------------------------------- |
-| `@well-known/core`                       | Provider types and the `defineConfig` helper                   |
-| `@well-known/apple-app-site-association` | Apple App Site Association provider and schema                 |
-| `@well-known/vite`                       | Framework-agnostic Vite plugin                                 |
-| `@well-known/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
-| `@well-known/next`                       | Next.js adapter generating files in `public`                   |
-| `@well-known/nuxt`                       | Nuxt module generating files in `public`                       |
-| `@well-known/nestjs`                     | NestJS module exposing well-known routes directly              |
-| `@well-known/express`                    | Express middleware exposing well-known routes directly         |
-| `@well-known/tanstack-start`             | TanStack Start server route handlers                           |
-| `@well-known/fastify`                    | Fastify plugin exposing well-known routes                      |
-| `@well-known/hono`                       | Hono middleware exposing well-known routes                     |
-| `@well-known/astro`                      | Astro integration generating public files                      |
-| `@well-known/react-router`               | React Router resource route loader                             |
-| `@well-known/angular`                    | Angular SSR server middleware                                  |
-| `@well-known/solidstart`                 | SolidStart server route handlers                               |
-| `@well-known/koa`                        | Koa middleware exposing well-known routes                      |
-| `@well-known/elysia`                     | Elysia plugin exposing well-known routes                       |
-| `@well-known/adonisjs`                   | AdonisJS middleware exposing well-known routes                 |
-| `@well-known/node`                       | Native Node.js and Fetch handlers                              |
-| `@well-known/assetlinks`                 | Reserved for Android Asset Links support                       |
+| Package                                     | Purpose                                                        |
+| ------------------------------------------- | -------------------------------------------------------------- |
+| `@well-known-js/core`                       | Provider types and the `defineConfig` helper                   |
+| `@well-known-js/apple-app-site-association` | Apple App Site Association provider and schema                 |
+| `@well-known-js/vite`                       | Framework-agnostic Vite plugin                                 |
+| `@well-known-js/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
+| `@well-known-js/next`                       | Next.js adapter generating files in `public`                   |
+| `@well-known-js/nuxt`                       | Nuxt module generating files in `public`                       |
+| `@well-known-js/nestjs`                     | NestJS module exposing well-known routes directly              |
+| `@well-known-js/express`                    | Express middleware exposing well-known routes directly         |
+| `@well-known-js/tanstack-start`             | TanStack Start server route handlers                           |
+| `@well-known-js/fastify`                    | Fastify plugin exposing well-known routes                      |
+| `@well-known-js/hono`                       | Hono middleware exposing well-known routes                     |
+| `@well-known-js/astro`                      | Astro integration generating public files                      |
+| `@well-known-js/react-router`               | React Router resource route loader                             |
+| `@well-known-js/angular`                    | Angular SSR server middleware                                  |
+| `@well-known-js/solidstart`                 | SolidStart server route handlers                               |
+| `@well-known-js/koa`                        | Koa middleware exposing well-known routes                      |
+| `@well-known-js/elysia`                     | Elysia plugin exposing well-known routes                       |
+| `@well-known-js/adonisjs`                   | AdonisJS middleware exposing well-known routes                 |
+| `@well-known-js/node`                       | Native Node.js and Fetch handlers                              |
+| `@well-known-js/assetlinks`                 | Reserved for Android Asset Links support                       |
 
 ## Requirements
 
 - Node.js 20 or later
 - Vite 5 or later for the Vite integrations
-- SvelteKit 2 or later when using `@well-known/sveltekit`
-- Next.js 15 or later when using `@well-known/next`
-- Nuxt 3 or later when using `@well-known/nuxt`
-- NestJS 11 or later when using `@well-known/nestjs`
-- Express 5 or later when using `@well-known/express`
+- SvelteKit 2 or later when using `@well-known-js/sveltekit`
+- Next.js 15 or later when using `@well-known-js/next`
+- Nuxt 3 or later when using `@well-known-js/nuxt`
+- NestJS 11 or later when using `@well-known-js/nestjs`
+- Express 5 or later when using `@well-known-js/express`
 
 ## Run the examples
 
@@ -79,20 +79,20 @@ listed URL:
 For a Vite project:
 
 ```sh
-pnpm add @well-known/core @well-known/vite
+pnpm add @well-known-js/core @well-known-js/vite
 ```
 
 Install the providers required by the project. For Apple Universal Links:
 
 ```sh
-pnpm add @well-known/apple-app-site-association
+pnpm add @well-known-js/apple-app-site-association
 ```
 
 For SvelteKit, use the dedicated adapter instead of importing the generic Vite plugin directly:
 
 ```sh
-pnpm add @well-known/core @well-known/sveltekit
-pnpm add @well-known/apple-app-site-association
+pnpm add @well-known-js/core @well-known-js/sveltekit
+pnpm add @well-known-js/apple-app-site-association
 ```
 
 ## Configuration
@@ -100,8 +100,8 @@ pnpm add @well-known/apple-app-site-association
 Create `well-known.config.ts` at the project root:
 
 ```ts
-import { appleAppSiteAssociation } from "@well-known/apple-app-site-association";
-import { defineConfig } from "@well-known/core";
+import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
+import { defineConfig } from "@well-known-js/core";
 
 export default defineConfig({
 	providers: [
@@ -131,7 +131,7 @@ Add the plugin to `vite.config.ts`:
 
 ```ts
 import { defineConfig } from "vite";
-import { wellKnown } from "@well-known/vite";
+import { wellKnown } from "@well-known-js/vite";
 
 export default defineConfig({
 	plugins: [wellKnown()],
@@ -154,11 +154,11 @@ Both paths are resolved from the Vite project root.
 
 ## SvelteKit
 
-Use `@well-known/sveltekit` alongside the SvelteKit Vite plugin:
+Use `@well-known-js/sveltekit` alongside the SvelteKit Vite plugin:
 
 ```ts
 import { sveltekit } from "@sveltejs/kit/vite";
-import { wellKnown } from "@well-known/sveltekit";
+import { wellKnown } from "@well-known-js/sveltekit";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -187,14 +187,14 @@ With the AASA provider, the generated file is available at:
 Install the Asset Links provider:
 
 ```sh
-pnpm add @well-known/assetlinks
+pnpm add @well-known-js/assetlinks
 ```
 
 Add it to `well-known.config.ts` with the Android package name and SHA-256 certificate
 fingerprints:
 
 ```ts
-import { assetLinks } from "@well-known/assetlinks";
+import { assetLinks } from "@well-known-js/assetlinks";
 
 assetLinks({
 	statements: [
@@ -224,14 +224,14 @@ file is available at:
 Install the Next.js adapter and the providers required by the project:
 
 ```sh
-pnpm add @well-known/core @well-known/next
-pnpm add @well-known/apple-app-site-association
+pnpm add @well-known-js/core @well-known-js/next
+pnpm add @well-known-js/apple-app-site-association
 ```
 
 Create an App Router catch-all route at `app/.well-known/[...path]/route.ts`:
 
 ```ts
-import { createWellKnownRouteHandlers } from "@well-known/next";
+import { createWellKnownRouteHandlers } from "@well-known-js/next";
 
 import wellKnownConfig from "../../../well-known.config";
 
@@ -247,14 +247,14 @@ the application build.
 Install the Nuxt module and the providers required by the project:
 
 ```sh
-pnpm add @well-known/core @well-known/nuxt
-pnpm add @well-known/apple-app-site-association
+pnpm add @well-known-js/core @well-known-js/nuxt
+pnpm add @well-known-js/apple-app-site-association
 ```
 
 Register the module in `nuxt.config.ts`:
 
 ```ts
-import wellKnown from "@well-known/nuxt";
+import wellKnown from "@well-known-js/nuxt";
 
 export default defineNuxtConfig({
 	modules: [wellKnown],
@@ -282,15 +282,15 @@ export default defineNuxtConfig({
 Install the NestJS module and the providers required by the project:
 
 ```sh
-pnpm add @well-known/core @well-known/nestjs
-pnpm add @well-known/apple-app-site-association
+pnpm add @well-known-js/core @well-known-js/nestjs
+pnpm add @well-known-js/apple-app-site-association
 ```
 
 Import the same well-known configuration directly into the application module:
 
 ```ts
 import { Module } from "@nestjs/common";
-import { WellKnownModule } from "@well-known/nestjs";
+import { WellKnownModule } from "@well-known-js/nestjs";
 
 import wellKnownConfig from "../well-known.config.js";
 
@@ -311,15 +311,15 @@ the standard URLs remain available at the domain root.
 Install the Express middleware and the providers required by the project:
 
 ```sh
-pnpm add @well-known/core @well-known/express
-pnpm add @well-known/apple-app-site-association
+pnpm add @well-known-js/core @well-known-js/express
+pnpm add @well-known-js/apple-app-site-association
 ```
 
 Register the middleware before the application's fallback routes:
 
 ```ts
 import express from "express";
-import { wellKnown } from "@well-known/express";
+import { wellKnown } from "@well-known-js/express";
 
 import wellKnownConfig from "../well-known.config.js";
 
@@ -353,7 +353,7 @@ content types:
 Astro uses a build integration instead:
 
 ```ts
-import wellKnown from "@well-known/astro";
+import wellKnown from "@well-known-js/astro";
 
 export default defineConfig({
 	integrations: [wellKnown()],
@@ -368,7 +368,7 @@ configuration changes during development.
 A provider instance declares its destination and returns the generated file:
 
 ```ts
-import type { WellKnownProviderInstance } from "@well-known/core";
+import type { WellKnownProviderInstance } from "@well-known-js/core";
 
 export function exampleProvider(): WellKnownProviderInstance {
 	return {
@@ -413,7 +413,7 @@ publishes every package together at `1.0.0`. Later releases can use either strat
 
 - `grouped`: selected packages receive one shared version and one GitHub tag such as `v1.1.0`;
 - `independent`: each selected package receives its own version and tag such as
-  `@well-known/core@1.2.0`.
+  `@well-known-js/core@1.2.0`.
 
 Run the **Prepare release** workflow to create a pull request containing the package version and
 lockfile changes. After merging that pull request, run **Publish release** from the `main` branch.

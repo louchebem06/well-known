@@ -10,10 +10,10 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
-		"@well-known/apple-app-site-association": "workspace:*",
-		"@well-known/assetlinks": "workspace:*",
-		"@well-known/core": "workspace:*",
-		"@well-known/fastify": "workspace:*",
+		"@well-known-js/apple-app-site-association": "workspace:*",
+		"@well-known-js/assetlinks": "workspace:*",
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/fastify": "workspace:*",
 		"fastify": "^5.12.4"
 	},
 	"devDependencies": {

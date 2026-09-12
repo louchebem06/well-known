@@ -1,4 +1,4 @@
 import { defineConfig } from "astro/config";
-import wellKnown from "@well-known/astro";
+import wellKnown from "@well-known-js/astro";
 
 export default defineConfig({ integrations: [wellKnown()] });

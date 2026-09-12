@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { createWellKnownServerHandler } from "@well-known/tanstack-start";
+import { createWellKnownServerHandler } from "@well-known-js/tanstack-start";
 import config from "../well-known.config.js";
 
 const handler = createWellKnownServerHandler(config);

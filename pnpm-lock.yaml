@@ -50,16 +50,16 @@ importers:
 
   examples/adonisjs:
     dependencies:
-      '@well-known/adonisjs':
+      '@well-known-js/adonisjs':
         specifier: workspace:*
         version: link:../../packages/adonisjs
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
     devDependencies:
@@ -78,16 +78,16 @@ importers:
 
   examples/angular:
     dependencies:
-      '@well-known/angular':
+      '@well-known-js/angular':
         specifier: workspace:*
         version: link:../../packages/angular
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
     devDependencies:
@@ -106,16 +106,16 @@ importers:
 
   examples/astro:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/astro':
+      '@well-known-js/astro':
         specifier: workspace:*
         version: link:../../packages/astro
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
       astro:
@@ -137,16 +137,16 @@ importers:
       '@elysiajs/node':
         specifier: ^1.4.0
         version: 1.4.5(elysia@1.4.30(@sinclair/typebox@0.34.52)(exact-mirror@1.2.6)(file-type@22.0.2)(openapi-types@12.1.3)(typescript@5.9.3))
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/elysia':
+      '@well-known-js/elysia':
         specifier: workspace:*
         version: link:../../packages/elysia
       elysia:
@@ -168,16 +168,16 @@ importers:
 
   examples/express:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/express':
+      '@well-known-js/express':
         specifier: workspace:*
         version: link:../../packages/express
       express:
@@ -202,16 +202,16 @@ importers:
 
   examples/fastify:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/fastify':
+      '@well-known-js/fastify':
         specifier: workspace:*
         version: link:../../packages/fastify
       fastify:
@@ -236,16 +236,16 @@ importers:
       '@hono/node-server':
         specifier: ^1.19.0
         version: 1.19.17(hono@4.13.7)
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/hono':
+      '@well-known-js/hono':
         specifier: workspace:*
         version: link:../../packages/hono
       hono:
@@ -267,16 +267,16 @@ importers:
 
   examples/koa:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/koa':
+      '@well-known-js/koa':
         specifier: workspace:*
         version: link:../../packages/koa
       koa:
@@ -310,16 +310,16 @@ importers:
       '@nestjs/platform-express':
         specifier: ^12.0.1
         version: 12.0.1(@nestjs/common@12.0.1(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@12.0.1)
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/nestjs':
+      '@well-known-js/nestjs':
         specifier: workspace:*
         version: link:../../packages/nestjs
       reflect-metadata:
@@ -344,16 +344,16 @@ importers:
 
   examples/next:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/next':
+      '@well-known-js/next':
         specifier: workspace:*
         version: link:../../packages/next
       next:
@@ -384,16 +384,16 @@ importers:
 
   examples/node:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../../packages/node
     devDependencies:
@@ -412,16 +412,16 @@ importers:
 
   examples/nuxt:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/nuxt':
+      '@well-known-js/nuxt':
         specifier: workspace:*
         version: link:../../packages/nuxt
       nuxt:
@@ -446,16 +446,16 @@ importers:
 
   examples/react-router:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/react-router':
+      '@well-known-js/react-router':
         specifier: workspace:*
         version: link:../../packages/react-router
     devDependencies:
@@ -474,16 +474,16 @@ importers:
 
   examples/solidstart:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/solidstart':
+      '@well-known-js/solidstart':
         specifier: workspace:*
         version: link:../../packages/solidstart
     devDependencies:
@@ -502,16 +502,16 @@ importers:
 
   examples/sveltekit:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/sveltekit':
+      '@well-known-js/sveltekit':
         specifier: workspace:*
         version: link:../../packages/sveltekit
     devDependencies:
@@ -539,16 +539,16 @@ importers:
 
   examples/tanstack-start:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/tanstack-start':
+      '@well-known-js/tanstack-start':
         specifier: workspace:*
         version: link:../../packages/tanstack-start
     devDependencies:
@@ -567,16 +567,16 @@ importers:
 
   examples/vite:
     dependencies:
-      '@well-known/apple-app-site-association':
+      '@well-known-js/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
-      '@well-known/assetlinks':
+      '@well-known-js/assetlinks':
         specifier: workspace:*
         version: link:../../packages/assetlinks
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@well-known/vite':
+      '@well-known-js/vite':
         specifier: workspace:*
         version: link:../../packages/vite
       vite:
@@ -595,10 +595,10 @@ importers:
       '@adonisjs/core':
         specifier: '>=6 <7'
         version: 6.21.0
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
 
@@ -607,16 +607,16 @@ importers:
       '@angular/ssr':
         specifier: '>=19 <22'
         version: 21.2.24(@angular/common@21.2.23(@angular/core@21.2.23(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.23(rxjs@7.8.2))(@angular/router@21.2.23(@angular/common@21.2.23(@angular/core@21.2.23(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.23(rxjs@7.8.2))(@angular/platform-browser@21.2.23(@angular/common@21.2.23(@angular/core@21.2.23(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.23(rxjs@7.8.2)))(rxjs@7.8.2))
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
 
   packages/apple-app-site-association:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
       zod:
@@ -625,7 +625,7 @@ importers:
 
   packages/assetlinks:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
       zod:
@@ -634,7 +634,7 @@ importers:
 
   packages/astro:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
       jiti:
@@ -649,7 +649,7 @@ importers:
 
   packages/elysia:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -665,7 +665,7 @@ importers:
       '@types/express':
         specifier: ^5.0.0
         version: 5.0.6
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -675,7 +675,7 @@ importers:
 
   packages/fastify:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
       fastify-plugin:
@@ -688,10 +688,10 @@ importers:
 
   packages/hono:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
     devDependencies:
@@ -704,10 +704,10 @@ importers:
       '@types/koa':
         specifier: ^3.0.3
         version: 3.0.3
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
     devDependencies:
@@ -717,7 +717,7 @@ importers:
 
   packages/nestjs:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -739,10 +739,10 @@ importers:
 
   packages/next:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
       next:
@@ -751,7 +751,7 @@ importers:
 
   packages/node:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
 
@@ -763,7 +763,7 @@ importers:
       '@nuxt/schema':
         specifier: ^3.21.11
         version: 3.21.11
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
       jiti:
@@ -775,10 +775,10 @@ importers:
 
   packages/react-router:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
       react-router:
@@ -790,10 +790,10 @@ importers:
       '@solidjs/start':
         specifier: '>=1 <2'
         version: 1.3.2(solid-js@1.9.15)(vinxi@0.5.11(@parcel/watcher@2.6.0)(@types/node@24.13.4)(db0@0.3.4)(ioredis@5.11.1)(jiti@2.7.0)(lightningcss@1.33.0)(oxc-parser@0.143.0)(rolldown@1.2.8)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1))(vite@8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1))
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
 
@@ -802,7 +802,7 @@ importers:
       '@sveltejs/kit':
         specifier: '>=2'
         version: 2.70.3(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.57.0(@typescript-eslint/types@8.70.0))(vite@8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)))(svelte@5.57.0(@typescript-eslint/types@8.70.0))(typescript@6.0.3)(vite@8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1))
-      '@well-known/vite':
+      '@well-known-js/vite':
         specifier: workspace:*
         version: link:../vite
       vite:
@@ -814,16 +814,16 @@ importers:
       '@tanstack/react-start':
         specifier: '>=1 <2'
         version: 1.168.52(crossws@0.4.12(srvx@0.11.22))(esbuild@0.28.2)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(rolldown@1.2.8)(rollup@4.63.2)(vite-plugin-solid@2.11.14(solid-js@1.9.15)(vite@8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)))(vite@8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1))(webpack@5.106.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.28))
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
-      '@well-known/node':
+      '@well-known-js/node':
         specifier: workspace:*
         version: link:../node
 
   packages/vite:
     dependencies:
-      '@well-known/core':
+      '@well-known-js/core':
         specifier: workspace:*
         version: link:../core
       jiti:

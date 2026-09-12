@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 
 /**
  * Generate all configured .well-known files.

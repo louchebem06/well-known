@@ -1,5 +1,5 @@
 import type { NextFunction, Request, Response } from "express";
-import type { WellKnownConfig, WellKnownProviderInstance } from "@well-known/core";
+import type { WellKnownConfig, WellKnownProviderInstance } from "@well-known-js/core";
 import { describe, expect, it, vi } from "vitest";
 
 import { wellKnown } from "./middleware.js";

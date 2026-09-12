@@ -21,9 +21,9 @@
 		"vite": "^8.0.16"
 	},
 	"dependencies": {
-		"@well-known/apple-app-site-association": "workspace:*",
-		"@well-known/assetlinks": "workspace:*",
-		"@well-known/core": "workspace:*",
-		"@well-known/sveltekit": "workspace:*"
+		"@well-known-js/apple-app-site-association": "workspace:*",
+		"@well-known-js/assetlinks": "workspace:*",
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/sveltekit": "workspace:*"
 	}
 }

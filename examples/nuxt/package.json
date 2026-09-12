@@ -10,10 +10,10 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
-		"@well-known/apple-app-site-association": "workspace:*",
-		"@well-known/assetlinks": "workspace:*",
-		"@well-known/core": "workspace:*",
-		"@well-known/nuxt": "workspace:*",
+		"@well-known-js/apple-app-site-association": "workspace:*",
+		"@well-known-js/assetlinks": "workspace:*",
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/nuxt": "workspace:*",
 		"nuxt": "^3.21.11",
 		"vue": "^3.5.0",
 		"vue-router": "^4.6.0"

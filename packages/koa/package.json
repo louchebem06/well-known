@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/koa",
+	"name": "@well-known-js/koa",
 	"version": "1.0.0",
 	"description": "Koa middleware for serving .well-known routes.",
 	"license": "MIT",
@@ -29,8 +29,8 @@
 	},
 	"dependencies": {
 		"@types/koa": "^3.0.3",
-		"@well-known/core": "workspace:*",
-		"@well-known/node": "workspace:*"
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/node": "workspace:*"
 	},
 	"peerDependencies": {
 		"koa": ">=3 <4"

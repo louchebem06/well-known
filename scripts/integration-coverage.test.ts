@@ -9,7 +9,7 @@ import {
 
 const readyFeature: FeatureDefinition = {
 	id: "test-feature",
-	package: "@well-known/test-feature",
+	package: "@well-known-js/test-feature",
 	export: "testFeature",
 	filename: "test.json",
 	path: "/.well-known/test.json",
@@ -34,15 +34,15 @@ function provider(overrides: Partial<GeneratedFile> = {}): ProviderInstance {
 function validInput(): CoverageInput {
 	return {
 		manifest: {
-			technicalPackages: ["@well-known/core"],
+			technicalPackages: ["@well-known-js/core"],
 			integrations: [
-				{ id: "framework", package: "@well-known/framework", example: "framework" },
+				{ id: "framework", package: "@well-known-js/framework", example: "framework" },
 			],
 			features: [readyFeature],
 		},
 		workspacePackages: new Set([
-			"@well-known/core",
-			"@well-known/framework",
+			"@well-known-js/core",
+			"@well-known-js/framework",
 			readyFeature.package,
 		]),
 		integrations: [
@@ -96,7 +96,7 @@ describe("integration coverage", () => {
 
 	it("fails when a workspace package is not classified", () => {
 		const input = validInput();
-		input.workspacePackages.add("@well-known/unknown");
+		input.workspacePackages.add("@well-known-js/unknown");
 		const result = validateIntegrationCoverage(input);
 		expect(result.hasErrors).toBe(true);
 		expect(result.issues.some((issue) => issue.message.includes("Unclassified"))).toBe(true);

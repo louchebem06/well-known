@@ -1,6 +1,6 @@
 import type { FastifyPluginAsync } from "fastify";
 import fastifyPlugin from "fastify-plugin";
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 
 export interface WellKnownFastifyOptions {
 	config: WellKnownConfig;
@@ -23,5 +23,5 @@ const plugin: FastifyPluginAsync<WellKnownFastifyOptions> = async (fastify, opti
 	}
 };
 
-export const wellKnown = fastifyPlugin(plugin, { name: "@well-known/fastify" });
+export const wellKnown = fastifyPlugin(plugin, { name: "@well-known-js/fastify" });
 export default wellKnown;

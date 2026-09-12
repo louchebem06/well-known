@@ -1,5 +1,5 @@
 import express from "express";
-import { wellKnown } from "@well-known/express";
+import { wellKnown } from "@well-known-js/express";
 
 import wellKnownConfig from "../well-known.config.js";
 

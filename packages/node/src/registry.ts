@@ -1,4 +1,4 @@
-import type { WellKnownConfig, WellKnownGeneratedFile } from "@well-known/core";
+import type { WellKnownConfig, WellKnownGeneratedFile } from "@well-known-js/core";
 
 export class WellKnownRegistry {
 	readonly #files = new Map<string, WellKnownGeneratedFile>();

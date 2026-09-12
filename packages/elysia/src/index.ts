@@ -1,8 +1,8 @@
 import { Elysia } from "elysia";
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 
 export function wellKnown(config: WellKnownConfig): Elysia {
-	const plugin = new Elysia({ name: "@well-known/elysia" });
+	const plugin = new Elysia({ name: "@well-known-js/elysia" });
 	const paths = new Set<string>();
 
 	for (const provider of config.providers) {

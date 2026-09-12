@@ -1,5 +1,5 @@
-import type { WellKnownConfig } from "@well-known/core";
-import { createWellKnownFetchHandler } from "@well-known/node";
+import type { WellKnownConfig } from "@well-known-js/core";
+import { createWellKnownFetchHandler } from "@well-known-js/node";
 
 export interface WellKnownRouteHandlers {
 	GET(request: Request): Response;

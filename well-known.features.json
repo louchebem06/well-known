@@ -1,40 +1,40 @@
 {
-	"technicalPackages": ["@well-known/core"],
+	"technicalPackages": ["@well-known-js/core"],
 	"integrations": [
-		{ "id": "adonisjs", "package": "@well-known/adonisjs", "example": "adonisjs" },
-		{ "id": "angular", "package": "@well-known/angular", "example": "angular" },
-		{ "id": "astro", "package": "@well-known/astro", "example": "astro" },
-		{ "id": "elysia", "package": "@well-known/elysia", "example": "elysia" },
-		{ "id": "express", "package": "@well-known/express", "example": "express" },
-		{ "id": "fastify", "package": "@well-known/fastify", "example": "fastify" },
-		{ "id": "hono", "package": "@well-known/hono", "example": "hono" },
-		{ "id": "koa", "package": "@well-known/koa", "example": "koa" },
-		{ "id": "nestjs", "package": "@well-known/nestjs", "example": "nestjs" },
-		{ "id": "next", "package": "@well-known/next", "example": "next" },
-		{ "id": "node", "package": "@well-known/node", "example": "node" },
-		{ "id": "nuxt", "package": "@well-known/nuxt", "example": "nuxt" },
+		{ "id": "adonisjs", "package": "@well-known-js/adonisjs", "example": "adonisjs" },
+		{ "id": "angular", "package": "@well-known-js/angular", "example": "angular" },
+		{ "id": "astro", "package": "@well-known-js/astro", "example": "astro" },
+		{ "id": "elysia", "package": "@well-known-js/elysia", "example": "elysia" },
+		{ "id": "express", "package": "@well-known-js/express", "example": "express" },
+		{ "id": "fastify", "package": "@well-known-js/fastify", "example": "fastify" },
+		{ "id": "hono", "package": "@well-known-js/hono", "example": "hono" },
+		{ "id": "koa", "package": "@well-known-js/koa", "example": "koa" },
+		{ "id": "nestjs", "package": "@well-known-js/nestjs", "example": "nestjs" },
+		{ "id": "next", "package": "@well-known-js/next", "example": "next" },
+		{ "id": "node", "package": "@well-known-js/node", "example": "node" },
+		{ "id": "nuxt", "package": "@well-known-js/nuxt", "example": "nuxt" },
 		{
 			"id": "react-router",
-			"package": "@well-known/react-router",
+			"package": "@well-known-js/react-router",
 			"example": "react-router"
 		},
-		{ "id": "solidstart", "package": "@well-known/solidstart", "example": "solidstart" },
+		{ "id": "solidstart", "package": "@well-known-js/solidstart", "example": "solidstart" },
 		{
 			"id": "sveltekit",
-			"package": "@well-known/sveltekit",
+			"package": "@well-known-js/sveltekit",
 			"example": "sveltekit"
 		},
 		{
 			"id": "tanstack-start",
-			"package": "@well-known/tanstack-start",
+			"package": "@well-known-js/tanstack-start",
 			"example": "tanstack-start"
 		},
-		{ "id": "vite", "package": "@well-known/vite", "example": "vite" }
+		{ "id": "vite", "package": "@well-known-js/vite", "example": "vite" }
 	],
 	"features": [
 		{
 			"id": "apple-app-site-association",
-			"package": "@well-known/apple-app-site-association",
+			"package": "@well-known-js/apple-app-site-association",
 			"export": "appleAppSiteAssociation",
 			"filename": "apple-app-site-association",
 			"path": "/.well-known/apple-app-site-association",
@@ -43,7 +43,7 @@
 		},
 		{
 			"id": "assetlinks",
-			"package": "@well-known/assetlinks",
+			"package": "@well-known-js/assetlinks",
 			"export": "assetLinks",
 			"filename": "assetlinks.json",
 			"path": "/.well-known/assetlinks.json",

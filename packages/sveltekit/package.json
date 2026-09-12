@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/sveltekit",
+	"name": "@well-known-js/sveltekit",
 	"version": "1.0.0",
 	"description": "SvelteKit integration for generating .well-known files.",
 	"license": "MIT",
@@ -27,7 +27,7 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
-		"@well-known/vite": "workspace:*"
+		"@well-known-js/vite": "workspace:*"
 	},
 	"peerDependencies": {
 		"@sveltejs/kit": ">=2",

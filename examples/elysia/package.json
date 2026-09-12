@@ -11,10 +11,10 @@
 	},
 	"dependencies": {
 		"@elysiajs/node": "^1.4.0",
-		"@well-known/apple-app-site-association": "workspace:*",
-		"@well-known/assetlinks": "workspace:*",
-		"@well-known/core": "workspace:*",
-		"@well-known/elysia": "workspace:*",
+		"@well-known-js/apple-app-site-association": "workspace:*",
+		"@well-known-js/assetlinks": "workspace:*",
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/elysia": "workspace:*",
 		"elysia": "^1.4.30"
 	},
 	"devDependencies": {

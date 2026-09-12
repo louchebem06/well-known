@@ -89,7 +89,7 @@ for (const example of exampleDirectories) {
 const featureExports = new Map<string, Set<string>>();
 for (const feature of manifest.features) {
 	try {
-		const packageDirectory = feature.package.replace("@well-known/", "");
+		const packageDirectory = feature.package.replace("@well-known-js/", "");
 		const module = (await import(
 			pathToFileURL(join(root, "packages", packageDirectory, "dist/index.js")).href
 		)) as Record<string, unknown>;

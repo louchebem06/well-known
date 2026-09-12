@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { createWellKnownNodeHandler } from "@well-known/node";
+import { createWellKnownNodeHandler } from "@well-known-js/node";
 import config from "../well-known.config.js";
 
 const wellKnown = createWellKnownNodeHandler(config);

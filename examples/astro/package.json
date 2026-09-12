@@ -10,10 +10,10 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
-		"@well-known/apple-app-site-association": "workspace:*",
-		"@well-known/assetlinks": "workspace:*",
-		"@well-known/astro": "workspace:*",
-		"@well-known/core": "workspace:*",
+		"@well-known-js/apple-app-site-association": "workspace:*",
+		"@well-known-js/assetlinks": "workspace:*",
+		"@well-known-js/astro": "workspace:*",
+		"@well-known-js/core": "workspace:*",
 		"astro": "^6.4.8"
 	},
 	"devDependencies": {

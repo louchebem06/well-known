@@ -1,6 +1,6 @@
-import { appleAppSiteAssociation } from "@well-known/apple-app-site-association";
-import { assetLinks } from "@well-known/assetlinks";
-import { defineConfig } from "@well-known/core";
+import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
+import { assetLinks } from "@well-known-js/assetlinks";
+import { defineConfig } from "@well-known-js/core";
 export default defineConfig({
 	providers: [
 		assetLinks({

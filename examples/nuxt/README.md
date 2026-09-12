@@ -1,6 +1,6 @@
 # Nuxt example
 
-This app demonstrates `@well-known/nuxt` with the Apple App Site Association provider.
+This app demonstrates `@well-known-js/nuxt` with the Apple App Site Association provider.
 
 The module generates `public/.well-known/apple-app-site-association` and configures its Nitro
 content type.

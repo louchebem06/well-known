@@ -1,5 +1,5 @@
-import type { WellKnownConfig } from "@well-known/core";
-import { WellKnownRegistry } from "@well-known/node";
+import type { WellKnownConfig } from "@well-known-js/core";
+import { WellKnownRegistry } from "@well-known-js/node";
 
 export interface AdonisHttpContext {
 	request: { method(): string; url(includeQueryString?: boolean): string };

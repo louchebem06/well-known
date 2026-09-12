@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import wellKnown from "@well-known/fastify";
+import wellKnown from "@well-known-js/fastify";
 import config from "../well-known.config.js";
 
 const app = Fastify();

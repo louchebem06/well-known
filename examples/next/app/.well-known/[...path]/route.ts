@@ -1,4 +1,4 @@
-import { createWellKnownRouteHandlers } from "@well-known/next";
+import { createWellKnownRouteHandlers } from "@well-known-js/next";
 
 import wellKnownConfig from "../../../well-known.config";
 

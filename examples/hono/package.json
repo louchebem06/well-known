@@ -11,10 +11,10 @@
 	},
 	"dependencies": {
 		"@hono/node-server": "^1.19.0",
-		"@well-known/apple-app-site-association": "workspace:*",
-		"@well-known/assetlinks": "workspace:*",
-		"@well-known/core": "workspace:*",
-		"@well-known/hono": "workspace:*",
+		"@well-known-js/apple-app-site-association": "workspace:*",
+		"@well-known-js/assetlinks": "workspace:*",
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/hono": "workspace:*",
 		"hono": "^4.13.7"
 	},
 	"devDependencies": {

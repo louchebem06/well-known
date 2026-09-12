@@ -19,7 +19,7 @@ export function wellKnown(options: WellKnownViteOptions = {}): Plugin {
 	};
 
 	return {
-		name: "@well-known/vite",
+		name: "@well-known-js/vite",
 
 		async configResolved(config) {
 			root = config.root;

@@ -1,5 +1,5 @@
 import type { NextFunction, Request, RequestHandler, Response } from "express";
-import type { WellKnownConfig, WellKnownGeneratedFile } from "@well-known/core";
+import type { WellKnownConfig, WellKnownGeneratedFile } from "@well-known-js/core";
 
 function generateFiles(config: WellKnownConfig): Map<string, WellKnownGeneratedFile> {
 	const files = new Map<string, WellKnownGeneratedFile>();

@@ -1,7 +1,7 @@
 import "reflect-metadata";
 
 import { Test } from "@nestjs/testing";
-import type { WellKnownConfig, WellKnownProviderInstance } from "@well-known/core";
+import type { WellKnownConfig, WellKnownProviderInstance } from "@well-known-js/core";
 import { describe, expect, it } from "vitest";
 
 import { WellKnownController } from "./controller.js";

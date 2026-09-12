@@ -10,10 +10,10 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
-		"@well-known/apple-app-site-association": "workspace:*",
-		"@well-known/assetlinks": "workspace:*",
-		"@well-known/core": "workspace:*",
-		"@well-known/tanstack-start": "workspace:*"
+		"@well-known-js/apple-app-site-association": "workspace:*",
+		"@well-known-js/assetlinks": "workspace:*",
+		"@well-known-js/core": "workspace:*",
+		"@well-known-js/tanstack-start": "workspace:*"
 	},
 	"devDependencies": {
 		"@types/node": "^24.0.0",

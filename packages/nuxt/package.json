@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/nuxt",
+	"name": "@well-known-js/nuxt",
 	"version": "1.0.0",
 	"description": "Nuxt module for generating .well-known files.",
 	"license": "MIT",
@@ -30,7 +30,7 @@
 	"dependencies": {
 		"@nuxt/kit": "^3.21.11",
 		"@nuxt/schema": "^3.21.11",
-		"@well-known/core": "workspace:*",
+		"@well-known-js/core": "workspace:*",
 		"jiti": "^2.7.0"
 	},
 	"peerDependencies": {

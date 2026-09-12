@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 import { createJiti } from "jiti";
 
 export const DEFAULT_CONFIG_FILE = "well-known.config.ts";

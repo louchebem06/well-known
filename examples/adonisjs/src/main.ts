@@ -1,6 +1,6 @@
 import { createServer } from "node:http";
-import type { AdonisHttpContext, AdonisRouter } from "@well-known/adonisjs";
-import { registerWellKnownRoutes } from "@well-known/adonisjs";
+import type { AdonisHttpContext, AdonisRouter } from "@well-known-js/adonisjs";
+import { registerWellKnownRoutes } from "@well-known-js/adonisjs";
 import config from "../well-known.config.js";
 
 const routes = new Map<string, (context: AdonisHttpContext) => unknown>();

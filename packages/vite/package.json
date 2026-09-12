@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/vite",
+	"name": "@well-known-js/vite",
 	"version": "1.0.0",
 	"description": "Vite plugin for generating .well-known files.",
 	"license": "MIT",
@@ -27,7 +27,7 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
-		"@well-known/core": "workspace:*",
+		"@well-known-js/core": "workspace:*",
 		"jiti": "^2.7.0"
 	},
 	"peerDependencies": {

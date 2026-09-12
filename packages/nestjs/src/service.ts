@@ -1,5 +1,5 @@
 import { Inject, Injectable } from "@nestjs/common";
-import type { WellKnownConfig, WellKnownGeneratedFile } from "@well-known/core";
+import type { WellKnownConfig, WellKnownGeneratedFile } from "@well-known-js/core";
 
 import { WELL_KNOWN_CONFIG } from "./constants.js";
 

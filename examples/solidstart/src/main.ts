@@ -1,5 +1,5 @@
 import { createServer } from "node:http";
-import { createWellKnownRouteHandlers } from "@well-known/solidstart";
+import { createWellKnownRouteHandlers } from "@well-known-js/solidstart";
 import config from "../well-known.config.js";
 
 const handlers = createWellKnownRouteHandlers(config);

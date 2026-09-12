@@ -10,7 +10,7 @@ import type { WellKnownNuxtOptions } from "./types.js";
 const wellKnownModule: NuxtModule<WellKnownNuxtOptions, WellKnownNuxtOptions, false> =
 	defineNuxtModule<WellKnownNuxtOptions>({
 		meta: {
-			name: "@well-known/nuxt",
+			name: "@well-known-js/nuxt",
 			configKey: "wellKnown",
 		},
 		defaults: {

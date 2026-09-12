@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/apple-app-site-association",
+	"name": "@well-known-js/apple-app-site-association",
 	"version": "1.0.0",
 	"description": "Generate Apple App Site Association files for Universal Links and Associated Domains.",
 	"license": "MIT",
@@ -29,7 +29,7 @@
 		"test:coverage": "vitest run --coverage"
 	},
 	"dependencies": {
-		"@well-known/core": "workspace:*",
+		"@well-known-js/core": "workspace:*",
 		"zod": "^4.6.2"
 	},
 	"engines": {

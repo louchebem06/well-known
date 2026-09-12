@@ -4,7 +4,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type { AstroIntegration } from "astro";
-import type { WellKnownConfig } from "@well-known/core";
+import type { WellKnownConfig } from "@well-known-js/core";
 import { createJiti } from "jiti";
 
 export interface WellKnownAstroOptions {
@@ -30,7 +30,7 @@ export function wellKnown(options: WellKnownAstroOptions = {}): AstroIntegration
 		}
 	};
 	return {
-		name: "@well-known/astro",
+		name: "@well-known-js/astro",
 		hooks: {
 			"astro:config:setup": async ({ config }) => {
 				root = fileURLToPath(config.root);

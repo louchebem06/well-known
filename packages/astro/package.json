@@ -1,5 +1,5 @@
 {
-	"name": "@well-known/astro",
+	"name": "@well-known-js/astro",
 	"version": "1.0.0",
 	"description": "Astro integration for generating .well-known files.",
 	"license": "MIT",
@@ -28,7 +28,7 @@
 		"test": "vitest run"
 	},
 	"dependencies": {
-		"@well-known/core": "workspace:*",
+		"@well-known-js/core": "workspace:*",
 		"jiti": "^2.7.0"
 	},
 	"peerDependencies": {
