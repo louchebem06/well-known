@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "Nuxt module for generating .well-known files.",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/louchebem06/well-known.git",
+		"directory": "packages/nuxt"
+	},
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",

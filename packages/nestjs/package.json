@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "NestJS integration for serving .well-known routes.",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/louchebem06/well-known.git",
+		"directory": "packages/nestjs"
+	},
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",

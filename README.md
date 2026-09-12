@@ -406,6 +406,38 @@ Every framework adapter has an example under `examples`. Feature and integration
 declared in `well-known.features.json`; ready features must be configured by every example, while
 features under development are reported as warnings by `pnpm check:integrations`.
 
+## Releasing packages
+
+The committed `.release/plan.json` is the source of truth for package versions. The initial plan
+publishes every package together at `1.0.0`. Later releases can use either strategy:
+
+- `grouped`: selected packages receive one shared version and one GitHub tag such as `v1.1.0`;
+- `independent`: each selected package receives its own version and tag such as
+  `@well-known/core@1.2.0`.
+
+Run the **Prepare release** workflow to create a pull request containing the package version and
+lockfile changes. After merging that pull request, run **Publish release** from the `main` branch.
+It repeats every workspace check, publishes missing versions to npm in dependency order, and then
+creates the corresponding tags and GitHub Releases. Already published versions are skipped so a
+partially completed release can be retried safely.
+
+Configure npm Trusted Publishing for the `release-publish.yml` workflow, or add an `NPM_TOKEN`
+secret to the `npm` GitHub environment. Protecting that environment with required reviewers is
+recommended.
+
+The same preparation can be run locally after editing the release plan:
+
+```sh
+pnpm release:prepare
+```
+
+The publish commands are intentionally separate and should normally run only in GitHub Actions:
+
+```sh
+pnpm release:publish
+pnpm release:github
+```
+
 ## License
 
 [MIT](./LICENSE)

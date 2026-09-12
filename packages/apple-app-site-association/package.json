@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "Generate Apple App Site Association files for Universal Links and Associated Domains.",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/louchebem06/well-known.git",
+		"directory": "packages/apple-app-site-association"
+	},
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",

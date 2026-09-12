@@ -1,0 +1,96 @@
+name: Prepare release
+
+on:
+    workflow_dispatch:
+        inputs:
+            mode:
+                description: Version strategy
+                required: true
+                type: choice
+                options:
+                    - grouped
+                    - independent
+                default: grouped
+            version:
+                description: Shared version for grouped mode
+                required: false
+                default: 1.0.0
+            packages:
+                description: Comma-separated packages for grouped mode, or all
+                required: false
+                default: all
+            versions:
+                description: JSON package-to-version map for independent mode
+                required: false
+                default: "{}"
+            dist_tag:
+                description: npm dist-tag
+                required: true
+                type: choice
+                options:
+                    - latest
+                    - next
+                    - beta
+                default: latest
+
+permissions:
+    contents: write
+    pull-requests: write
+
+jobs:
+    prepare:
+        runs-on: ubuntu-latest
+        env:
+            RELEASE_MODE: ${{ inputs.mode }}
+            RELEASE_VERSION: ${{ inputs.version }}
+            RELEASE_PACKAGES: ${{ inputs.packages }}
+            RELEASE_VERSIONS: ${{ inputs.versions }}
+            RELEASE_TAG: ${{ inputs.dist_tag }}
+            GH_TOKEN: ${{ github.token }}
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 10.14.0
+                  run_install: false
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 24
+                  cache: pnpm
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Apply release plan
+              run: pnpm release:prepare
+
+            - name: Validate release
+              run: |
+                  pnpm format:check
+                  pnpm lint
+                  pnpm typecheck
+                  pnpm test
+                  pnpm build
+                  pnpm check:integrations
+
+            - name: Create release pull request
+              env:
+                  RELEASE_BRANCH: release/prepare-${{ github.run_id }}
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git switch -c "$RELEASE_BRANCH"
+                  git add .release/plan.json packages/*/package.json pnpm-lock.yaml
+                  if git diff --cached --quiet; then
+                    echo "The requested versions are already committed; no pull request is needed."
+                    exit 0
+                  fi
+                  git commit -m "chore(release): prepare packages"
+                  git push --set-upstream origin "$RELEASE_BRANCH"
+                  gh pr create --base main --head "$RELEASE_BRANCH" --title "chore(release): prepare packages" --body "Automated release preparation. Review and merge this PR, then run the Publish release workflow."

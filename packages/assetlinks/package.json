@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "Generate Android Digital Asset Links assetlinks.json files.",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/louchebem06/well-known.git",
+		"directory": "packages/assetlinks"
+	},
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",

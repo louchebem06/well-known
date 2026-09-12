@@ -1,0 +1,27 @@
+{
+	"mode": "grouped",
+	"version": "1.0.0",
+	"packages": [
+		"@well-known/adonisjs",
+		"@well-known/angular",
+		"@well-known/apple-app-site-association",
+		"@well-known/assetlinks",
+		"@well-known/astro",
+		"@well-known/core",
+		"@well-known/elysia",
+		"@well-known/express",
+		"@well-known/fastify",
+		"@well-known/hono",
+		"@well-known/koa",
+		"@well-known/nestjs",
+		"@well-known/next",
+		"@well-known/node",
+		"@well-known/nuxt",
+		"@well-known/react-router",
+		"@well-known/solidstart",
+		"@well-known/sveltekit",
+		"@well-known/tanstack-start",
+		"@well-known/vite"
+	],
+	"tag": "latest"
+}

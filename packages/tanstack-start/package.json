@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "TanStack Start server handlers for .well-known routes.",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/louchebem06/well-known.git",
+		"directory": "packages/tanstack-start"
+	},
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
