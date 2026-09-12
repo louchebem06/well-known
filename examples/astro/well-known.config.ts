@@ -2,9 +2,13 @@ import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-associati
 import { assetLinks } from "@well-known-js/assetlinks";
 import { defineConfig } from "@well-known-js/core";
 import { securityTxt } from "@well-known-js/security-txt";
+import { webAuthn } from "@well-known-js/webauthn";
 
 export default defineConfig({
 	providers: [
+		webAuthn({
+			origins: ["https://example.co.uk", "https://login.example.com"],
+		}),
 		securityTxt({
 			contacts: ["mailto:security@example.com"],
 			expires: "2099-12-31T23:59:59Z",

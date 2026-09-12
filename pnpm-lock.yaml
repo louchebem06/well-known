@@ -65,6 +65,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -96,6 +99,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -127,6 +133,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       astro:
         specifier: ^6.4.8
         version: 6.4.8(@types/node@24.13.4)(db0@0.3.4)(ioredis@5.11.1)(jiti@2.7.0)(lightningcss@1.33.0)(rollup@4.63.2)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)
@@ -161,6 +170,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       elysia:
         specifier: ^1.4.30
         version: 1.4.30(@sinclair/typebox@0.34.52)(exact-mirror@1.2.6)(file-type@22.0.2)(openapi-types@12.1.3)(typescript@5.9.3)
@@ -195,6 +207,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       express:
         specifier: ^5.2.1
         version: 5.2.1
@@ -232,6 +247,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       fastify:
         specifier: ^5.12.4
         version: 5.12.4
@@ -269,6 +287,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       hono:
         specifier: ^4.13.7
         version: 4.13.7
@@ -303,6 +324,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       koa:
         specifier: ^3.2.1
         version: 3.2.1
@@ -349,6 +373,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -386,6 +413,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       next:
         specifier: ^16.3.5
         version: 16.3.5(@types/node@24.13.4)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -429,6 +459,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -460,6 +493,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       nuxt:
         specifier: ^3.21.11
         version: 3.21.11(@oxc-project/types@0.149.0)(@parcel/watcher@2.6.0)(@types/node@24.13.4)(@vue/compiler-sfc@3.5.42)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.2)(eslint@10.10.0(jiti@2.7.0))(ioredis@5.11.1)(lightningcss@1.33.0)(magicast@0.5.5)(optionator@0.9.4)(rolldown@1.2.8)(rollup-plugin-visualizer@7.1.1(rolldown@1.2.8)(rollup@4.63.2))(rollup@4.63.2)(srvx@0.11.22)(terser@5.51.2)(tsx@4.23.13)(typescript@5.9.3)(vite@7.3.6(@types/node@24.13.4)(jiti@2.7.0)(lightningcss@1.33.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1))(vue-tsc@3.3.11(typescript@5.9.3))(webpack@5.106.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.28))(yaml@2.9.1)
@@ -497,6 +533,9 @@ importers:
       '@well-known-js/security-txt':
         specifier: workspace:*
         version: link:../../packages/security-txt
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -528,6 +567,9 @@ importers:
       '@well-known-js/solidstart':
         specifier: workspace:*
         version: link:../../packages/solidstart
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -559,6 +601,9 @@ importers:
       '@well-known-js/sveltekit':
         specifier: workspace:*
         version: link:../../packages/sveltekit
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^7.0.1
@@ -599,6 +644,9 @@ importers:
       '@well-known-js/tanstack-start':
         specifier: workspace:*
         version: link:../../packages/tanstack-start
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -630,6 +678,9 @@ importers:
       '@well-known-js/vite':
         specifier: workspace:*
         version: link:../../packages/vite
+      '@well-known-js/webauthn':
+        specifier: workspace:*
+        version: link:../../packages/webauthn
       vite:
         specifier: ^8.0.16
         version: 8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)
@@ -892,6 +943,15 @@ importers:
       vite:
         specifier: '>=5'
         version: 8.3.0(@types/node@24.13.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.13)(yaml@2.9.1)
+
+  packages/webauthn:
+    dependencies:
+      '@well-known-js/core':
+        specifier: workspace:*
+        version: link:../core
+      zod:
+        specifier: ^4.6.2
+        version: 4.6.2
 
 packages:
 

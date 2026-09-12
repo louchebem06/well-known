@@ -15,6 +15,7 @@
 		"@well-known-js/core": "workspace:*",
 		"@well-known-js/security-txt": "workspace:*",
 		"@well-known-js/vite": "workspace:*",
+		"@well-known-js/webauthn": "workspace:*",
 		"vite": "^8.0.16"
 	},
 	"devDependencies": {

@@ -58,6 +58,15 @@
 			"path": "/.well-known/security.txt",
 			"contentType": "text/plain; charset=utf-8",
 			"status": "ready"
+		},
+		{
+			"id": "webauthn",
+			"package": "@well-known-js/webauthn",
+			"export": "webAuthn",
+			"filename": "webauthn",
+			"path": "/.well-known/webauthn",
+			"contentType": "application/json",
+			"status": "ready"
 		}
 	]
 }
