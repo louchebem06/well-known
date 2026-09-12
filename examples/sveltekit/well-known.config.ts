@@ -2,6 +2,7 @@ import { agentCard } from "@well-known-js/agent-card";
 import { apiCatalog } from "@well-known-js/api-catalog";
 import { didWeb } from "@well-known-js/did-web";
 import { didConfiguration } from "@well-known-js/did-configuration";
+import { mtaSts } from "@well-known-js/mta-sts";
 import { gpc } from "@well-known-js/gpc";
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
@@ -15,6 +16,12 @@ import { webAuthn } from "@well-known-js/webauthn";
 
 export default defineConfig({
 	providers: [
+		mtaSts({
+			version: "STSv1",
+			mode: "enforce",
+			mx: ["mail.example.com", "*.example.net"],
+			maxAge: 604_800,
+		}),
 		didConfiguration({
 			"@context": "https://identity.foundation/.well-known/did-configuration/v1",
 			linked_dids: ["header.payload.signature"],

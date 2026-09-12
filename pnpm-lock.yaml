@@ -77,6 +77,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -138,6 +141,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -199,6 +205,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -263,6 +272,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -327,6 +339,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -394,6 +409,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -461,6 +479,9 @@ importers:
       '@well-known-js/hono':
         specifier: workspace:*
         version: link:../../packages/hono
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -525,6 +546,9 @@ importers:
       '@well-known-js/koa':
         specifier: workspace:*
         version: link:../../packages/koa
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -598,6 +622,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/nestjs':
         specifier: workspace:*
         version: link:../../packages/nestjs
@@ -665,6 +692,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/next':
         specifier: workspace:*
         version: link:../../packages/next
@@ -738,6 +768,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/node':
         specifier: workspace:*
         version: link:../../packages/node
@@ -799,6 +832,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/nuxt':
         specifier: workspace:*
         version: link:../../packages/nuxt
@@ -866,6 +902,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -927,6 +966,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -988,6 +1030,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -1058,6 +1103,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -1119,6 +1167,9 @@ importers:
       '@well-known-js/gpc':
         specifier: workspace:*
         version: link:../../packages/gpc
+      '@well-known-js/mta-sts':
+        specifier: workspace:*
+        version: link:../../packages/mta-sts
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -1320,6 +1371,15 @@ importers:
       koa:
         specifier: ^3.2.1
         version: 3.2.1
+
+  packages/mta-sts:
+    dependencies:
+      '@well-known-js/core':
+        specifier: workspace:*
+        version: link:../core
+      zod:
+        specifier: ^4.6.2
+        version: 4.6.2
 
   packages/nestjs:
     dependencies:

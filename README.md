@@ -17,6 +17,7 @@ application's public assets directory.
 | `@well-known-js/gpc`                        | Global Privacy Control support resource provider and schema    |
 | `@well-known-js/did-web`                    | did:web DID document provider and schema                       |
 | `@well-known-js/did-configuration`          | DIF DID Configuration resource provider and schema             |
+| `@well-known-js/mta-sts`                    | RFC 8461 SMTP MTA-STS policy provider and schema               |
 | `@well-known-js/apple-app-site-association` | Apple App Site Association provider and schema                 |
 | `@well-known-js/assetlinks`                 | Android Digital Asset Links provider and schema                |
 | `@well-known-js/security-txt`               | RFC 9116 security.txt provider and schema                      |
