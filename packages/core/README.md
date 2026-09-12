@@ -27,9 +27,20 @@ export default defineConfig({
 
 `defineConfig()` validates that provider routes are unique and preserves full TypeScript inference.
 
+The package also exports the contracts used to create providers and framework adapters:
+
+- `WellKnownConfig` describes the shared configuration object;
+- `WellKnownProvider<TConfig>` describes a reusable provider definition;
+- `WellKnownProviderInstance` describes a configured provider;
+- `WellKnownGeneratedFile` describes the generated path, filename, content type, and body.
+
 ## Providers
 
 - [`@well-known-js/apple-app-site-association`](https://www.npmjs.com/package/@well-known-js/apple-app-site-association)
 - [`@well-known-js/assetlinks`](https://www.npmjs.com/package/@well-known-js/assetlinks)
+- [`@well-known-js/security-txt`](https://www.npmjs.com/package/@well-known-js/security-txt)
+- [`@well-known-js/webauthn`](https://www.npmjs.com/package/@well-known-js/webauthn)
+- [`@well-known-js/passkey-endpoints`](https://www.npmjs.com/package/@well-known-js/passkey-endpoints)
+- [`@well-known-js/openid-configuration`](https://www.npmjs.com/package/@well-known-js/openid-configuration)
 
 [GitHub](https://github.com/louchebem06/well-known) · [Documentation](https://github.com/louchebem06/well-known#readme)
