@@ -580,10 +580,17 @@ mode. Releases can use either strategy:
   `@well-known-js/core@1.2.0`.
 
 Run the **Prepare release** workflow to create a pull request containing the package version and
-lockfile changes. After merging that pull request, run **Publish release** from the `main` branch.
-It repeats every workspace check, publishes missing versions to npm in dependency order, and then
-creates the corresponding tags and GitHub Releases. Already published versions are skipped so a
-partially completed release can be retried safely.
+lockfile changes. Its default `auto` mode detects package directories changed since each package's
+last release. Previously published packages receive a patch bump by default, while new packages keep
+their initial manifest version. When every proposed version matches, the workflow uses a grouped
+release; otherwise it uses independent versions. The form can override the bump, selected packages,
+strategy, or exact versions.
+
+Review the generated `.release/plan.json`, adjust it in the pull request if needed, and merge it.
+Then run **Publish release** from the `main` branch. It repeats every workspace check, publishes
+missing versions to npm in dependency order, and then creates the corresponding tags and GitHub
+Releases. Already published versions are skipped so a partially completed release can be retried
+safely.
 
 Configure npm Trusted Publishing for the `release-publish.yml` workflow, or add an `NPM_TOKEN`
 secret to the `npm` GitHub environment. Protecting that environment with required reviewers is

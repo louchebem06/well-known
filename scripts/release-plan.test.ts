@@ -3,6 +3,7 @@ import {
 	githubReleaseGroups,
 	resolveReleasePlan,
 	sortForPublishing,
+	suggestReleasePlan,
 	type PackageManifest,
 } from "./release-plan.js";
 
@@ -16,6 +17,71 @@ const manifests: PackageManifest[] = [
 ];
 
 describe("release plans", () => {
+	it("suggests a grouped patch release when every next version matches", () => {
+		expect(
+			suggestReleasePlan(
+				{
+					mode: "auto",
+					bump: "patch",
+					packageNames: manifests.map((manifest) => manifest.name),
+					publishedPackageNames: new Set(manifests.map((manifest) => manifest.name)),
+					tag: "latest",
+				},
+				manifests,
+			),
+		).toEqual({
+			mode: "grouped",
+			version: "1.0.1",
+			packages: ["@well-known-js/core", "@well-known-js/framework"],
+			tag: "latest",
+		});
+	});
+
+	it("suggests independent versions when new and published packages differ", () => {
+		expect(
+			suggestReleasePlan(
+				{
+					mode: "auto",
+					bump: "patch",
+					packageNames: manifests.map((manifest) => manifest.name),
+					publishedPackageNames: new Set(["@well-known-js/core"]),
+					tag: "latest",
+				},
+				manifests,
+			),
+		).toEqual({
+			mode: "independent",
+			versions: {
+				"@well-known-js/core": "1.0.1",
+				"@well-known-js/framework": "1.0.0",
+			},
+			tag: "latest",
+		});
+	});
+
+	it("applies exact version overrides and includes their packages", () => {
+		expect(
+			suggestReleasePlan(
+				{
+					mode: "independent",
+					bump: "minor",
+					packageNames: ["@well-known-js/core"],
+					publishedPackageNames: new Set(manifests.map((manifest) => manifest.name)),
+					versions: { "@well-known-js/framework": "2.0.0" },
+					tag: "next",
+				},
+				manifests,
+			),
+		).toEqual({
+			mode: "independent",
+			versions: {
+				"@well-known-js/core": "1.1.0",
+				"@well-known-js/framework": "2.0.0",
+			},
+			tag: "next",
+		});
+	});
+
 	it("resolves a grouped release", () => {
 		const plan = {
 			mode: "grouped" as const,

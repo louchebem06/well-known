@@ -1,4 +1,4 @@
-import { valid } from "semver";
+import { inc, rcompare, valid } from "semver";
 
 export interface PackageManifest {
 	name: string;
@@ -24,12 +24,67 @@ export interface IndependentReleasePlan {
 
 export type ReleasePlan = GroupedReleasePlan | IndependentReleasePlan;
 
+export type ReleaseMode = ReleasePlan["mode"] | "auto";
+export type ReleaseBump = "patch" | "minor" | "major";
+
 export interface ResolvedRelease {
 	name: string;
 	version: string;
 }
 
+export interface ReleasePlanSuggestion {
+	mode: ReleaseMode;
+	bump: ReleaseBump;
+	packageNames: string[];
+	publishedPackageNames: ReadonlySet<string>;
+	version?: string;
+	versions?: Record<string, string>;
+	tag: string;
+}
+
 const distTagPattern = /^[a-zA-Z][a-zA-Z0-9._-]*$/;
+
+export function suggestReleasePlan(
+	options: ReleasePlanSuggestion,
+	manifests: PackageManifest[],
+): ReleasePlan {
+	const manifestsByName = new Map(manifests.map((manifest) => [manifest.name, manifest]));
+	const packageNames = [
+		...new Set([...options.packageNames, ...Object.keys(options.versions ?? {})]),
+	].sort();
+	const versions = Object.fromEntries(
+		packageNames.map((name) => {
+			const manifest = manifestsByName.get(name);
+			if (!manifest || manifest.private)
+				throw new Error(`Unknown or private package: ${name}`);
+			const override = options.versions?.[name];
+			if (override) return [name, override];
+			if (!options.publishedPackageNames.has(name)) return [name, manifest.version];
+			const version = inc(manifest.version, options.bump);
+			if (!version)
+				throw new Error(`Invalid current version for ${name}: ${manifest.version}`);
+			return [name, version];
+		}),
+	);
+
+	if (options.mode === "grouped" || (options.mode === "auto" && options.version)) {
+		const version = options.version || Object.values(versions).sort(rcompare)[0];
+		if (!version) throw new Error("A release plan must contain at least one package.");
+		return { mode: "grouped", version, packages: packageNames, tag: options.tag };
+	}
+
+	const distinctVersions = new Set(Object.values(versions));
+	if (options.mode === "auto" && distinctVersions.size === 1) {
+		return {
+			mode: "grouped",
+			version: Object.values(versions)[0]!,
+			packages: packageNames,
+			tag: options.tag,
+		};
+	}
+
+	return { mode: "independent", versions, tag: options.tag };
+}
 
 export function resolveReleasePlan(
 	plan: ReleasePlan,
