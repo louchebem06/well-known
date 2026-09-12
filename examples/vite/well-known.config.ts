@@ -1,5 +1,6 @@
 import { agentCard } from "@well-known-js/agent-card";
 import { apiCatalog } from "@well-known-js/api-catalog";
+import { gpc } from "@well-known-js/gpc";
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
 import { defineConfig } from "@well-known-js/core";
@@ -12,6 +13,10 @@ import { webAuthn } from "@well-known-js/webauthn";
 
 export default defineConfig({
 	providers: [
+		gpc({
+			gpc: true,
+			lastUpdate: "2026-09-12",
+		}),
 		apiCatalog({
 			linkset: [
 				{

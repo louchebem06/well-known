@@ -33,6 +33,15 @@
 	],
 	"features": [
 		{
+			"id": "gpc",
+			"package": "@well-known-js/gpc",
+			"export": "gpc",
+			"filename": "gpc.json",
+			"path": "/.well-known/gpc.json",
+			"contentType": "application/json",
+			"status": "ready"
+		},
+		{
 			"id": "api-catalog",
 			"package": "@well-known-js/api-catalog",
 			"export": "apiCatalog",
