@@ -511,8 +511,8 @@ features under development are reported as warnings by `pnpm check:integrations`
 
 ## Releasing packages
 
-The committed `.release/plan.json` is the source of truth for package versions. The initial plan
-publishes every package together at `1.0.0`. Later releases can use either strategy:
+The committed `.release/plan.json` is the source of truth for the next package versions and release
+mode. Releases can use either strategy:
 
 - `grouped`: selected packages receive one shared version and one GitHub tag such as `v1.1.0`;
 - `independent`: each selected package receives its own version and tag such as
