@@ -3,6 +3,7 @@ import { inc, rcompare, valid } from "semver";
 export interface PackageManifest {
 	name: string;
 	version: string;
+	keywords?: string[];
 	private?: boolean;
 	dependencies?: Record<string, string>;
 	peerDependencies?: Record<string, string>;

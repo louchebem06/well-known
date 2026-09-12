@@ -2,6 +2,14 @@
 	"name": "@well-known-js/webauthn",
 	"version": "1.0.0",
 	"description": "Generate WebAuthn related origins discovery documents.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"webauthn",
+		"passkeys",
+		"related-origins",
+		"authentication"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

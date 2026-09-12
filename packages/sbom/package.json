@@ -2,6 +2,14 @@
 	"name": "@well-known-js/sbom",
 	"version": "1.0.0",
 	"description": "Serve RFC 9472 software bills of materials.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"sbom",
+		"software-bill-of-materials",
+		"supply-chain-security",
+		"rfc9472"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

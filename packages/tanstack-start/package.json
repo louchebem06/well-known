@@ -2,6 +2,14 @@
 	"name": "@well-known-js/tanstack-start",
 	"version": "1.0.1",
 	"description": "TanStack Start server handlers for .well-known routes.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"tanstack-start",
+		"tanstack",
+		"web-standards",
+		"server-handler"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

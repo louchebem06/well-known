@@ -2,6 +2,14 @@
 	"name": "@well-known-js/express",
 	"version": "1.0.1",
 	"description": "Express middleware for serving .well-known routes.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"express",
+		"nodejs",
+		"web-standards",
+		"middleware"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

@@ -2,6 +2,14 @@
 	"name": "@well-known-js/angular",
 	"version": "1.0.1",
 	"description": "Angular SSR middleware for serving .well-known routes.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"angular",
+		"angular-ssr",
+		"web-standards",
+		"middleware"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

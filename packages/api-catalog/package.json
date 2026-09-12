@@ -2,6 +2,14 @@
 	"name": "@well-known-js/api-catalog",
 	"version": "1.0.0",
 	"description": "Generate RFC 9727 API Catalog Linkset documents.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"api-catalog",
+		"api-discovery",
+		"linkset",
+		"rfc9727"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

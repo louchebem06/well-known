@@ -2,6 +2,14 @@
 	"name": "@well-known-js/assetlinks",
 	"version": "1.0.1",
 	"description": "Generate Android Digital Asset Links assetlinks.json files.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"assetlinks",
+		"android",
+		"digital-asset-links",
+		"app-links"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

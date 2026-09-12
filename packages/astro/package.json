@@ -2,6 +2,13 @@
 	"name": "@well-known-js/astro",
 	"version": "1.0.1",
 	"description": "Astro integration for generating .well-known files.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"astro",
+		"web-standards",
+		"integration"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

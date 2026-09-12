@@ -2,6 +2,14 @@
 	"name": "@well-known-js/gpc",
 	"version": "1.0.0",
 	"description": "Generate Global Privacy Control support resources.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"gpc",
+		"global-privacy-control",
+		"privacy",
+		"web-standards"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

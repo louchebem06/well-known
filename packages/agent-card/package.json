@@ -2,6 +2,14 @@
 	"name": "@well-known-js/agent-card",
 	"version": "1.0.0",
 	"description": "Generate Agent2Agent Agent Card discovery documents.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"agent-card",
+		"a2a-protocol",
+		"ai-agents",
+		"service-discovery"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

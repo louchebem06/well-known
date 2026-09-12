@@ -2,6 +2,14 @@
 	"name": "@well-known-js/did-configuration",
 	"version": "1.0.0",
 	"description": "Generate DIF DID Configuration resources.",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"did-configuration",
+		"decentralized-identity",
+		"domain-linkage",
+		"verifiable-credentials"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",
