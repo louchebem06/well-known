@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/assetlinks",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Generate Android Digital Asset Links assetlinks.json files.",
 	"license": "MIT",
 	"repository": {

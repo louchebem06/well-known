@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/solidstart",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "SolidStart server route handlers for .well-known routes.",
 	"license": "MIT",
 	"repository": {

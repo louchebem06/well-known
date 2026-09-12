@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/tanstack-start",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "TanStack Start server handlers for .well-known routes.",
 	"license": "MIT",
 	"repository": {

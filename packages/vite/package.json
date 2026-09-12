@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/vite",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Vite plugin for generating .well-known files.",
 	"license": "MIT",
 	"repository": {

@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/react-router",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "React Router resource route handlers for .well-known routes.",
 	"license": "MIT",
 	"repository": {

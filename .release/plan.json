@@ -1,6 +1,6 @@
 {
 	"mode": "grouped",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"packages": [
 		"@well-known-js/adonisjs",
 		"@well-known-js/angular",

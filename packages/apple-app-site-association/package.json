@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/apple-app-site-association",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Generate Apple App Site Association files for Universal Links and Associated Domains.",
 	"license": "MIT",
 	"repository": {
