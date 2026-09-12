@@ -8,6 +8,7 @@
 		{ "path": "./packages/did-web" },
 		{ "path": "./packages/did-configuration" },
 		{ "path": "./packages/mta-sts" },
+		{ "path": "./packages/sbom" },
 		{ "path": "./packages/apple-app-site-association" },
 		{ "path": "./packages/assetlinks" },
 		{ "path": "./packages/security-txt" },
