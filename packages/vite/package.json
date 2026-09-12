@@ -1,7 +1,7 @@
 {
-	"name": "@well-known/sveltekit",
+	"name": "@well-known/vite",
 	"version": "1.0.0",
-	"description": "SvelteKit integration for generating .well-known files.",
+	"description": "Vite plugin for generating .well-known files.",
 	"license": "MIT",
 	"type": "module",
 	"main": "./dist/index.js",
@@ -22,10 +22,10 @@
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
-		"@well-known/vite": "workspace:*"
+		"@well-known/core": "workspace:*",
+		"jiti": "^2.7.0"
 	},
 	"peerDependencies": {
-		"@sveltejs/kit": ">=2",
 		"vite": ">=5"
 	},
 	"engines": {

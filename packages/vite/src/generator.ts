@@ -8,14 +8,14 @@ import type { WellKnownConfig } from "@well-known/core";
  */
 export async function generateWellKnownFiles(
 	root: string,
-	staticDir: string,
+	outputDir: string,
 	config: WellKnownConfig,
 ): Promise<void> {
 	for (const provider of config.providers) {
 		const file = provider.generate();
 
 		const relativePath = file.path.replace(/^\/+/, "");
-		const outputPath = resolve(root, staticDir, relativePath);
+		const outputPath = resolve(root, outputDir, relativePath);
 
 		await mkdir(dirname(outputPath), {
 			recursive: true,

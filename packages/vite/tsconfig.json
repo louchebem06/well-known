@@ -13,7 +13,7 @@
 	},
 	"references": [
 		{
-			"path": "../vite"
+			"path": "../core"
 		}
 	],
 	"include": ["src/**/*.ts"]
