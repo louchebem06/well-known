@@ -36,6 +36,7 @@ The package also exports the contracts used to create providers and framework ad
 
 ## Providers
 
+- [`@well-known-js/agent-card`](https://www.npmjs.com/package/@well-known-js/agent-card)
 - [`@well-known-js/oauth-authorization-server`](https://www.npmjs.com/package/@well-known-js/oauth-authorization-server)
 - [`@well-known-js/oauth-protected-resource`](https://www.npmjs.com/package/@well-known-js/oauth-protected-resource)
 - [`@well-known-js/apple-app-site-association`](https://www.npmjs.com/package/@well-known-js/apple-app-site-association)

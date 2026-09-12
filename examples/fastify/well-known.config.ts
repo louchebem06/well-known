@@ -1,3 +1,4 @@
+import { agentCard } from "@well-known-js/agent-card";
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
 import { defineConfig } from "@well-known-js/core";
@@ -9,6 +10,29 @@ import { securityTxt } from "@well-known-js/security-txt";
 import { webAuthn } from "@well-known-js/webauthn";
 export default defineConfig({
 	providers: [
+		agentCard({
+			name: "Example Agent",
+			description: "Demonstrates Agent2Agent discovery.",
+			supportedInterfaces: [
+				{
+					url: "https://agent.example.com/a2a/v1",
+					protocolBinding: "HTTP+JSON",
+					protocolVersion: "1.0",
+				},
+			],
+			version: "1.0.0",
+			capabilities: { streaming: true },
+			defaultInputModes: ["text/plain"],
+			defaultOutputModes: ["text/plain", "application/json"],
+			skills: [
+				{
+					id: "research",
+					name: "Research",
+					description: "Researches questions using primary sources.",
+					tags: ["research", "citations"],
+				},
+			],
+		}),
 		oauthAuthorizationServer({
 			issuer: "https://id.example.com",
 			authorization_endpoint: "https://id.example.com/authorize",

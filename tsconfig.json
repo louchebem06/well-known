@@ -2,6 +2,7 @@
 	"files": [],
 	"references": [
 		{ "path": "./packages/core" },
+		{ "path": "./packages/agent-card" },
 		{ "path": "./packages/apple-app-site-association" },
 		{ "path": "./packages/assetlinks" },
 		{ "path": "./packages/security-txt" },
