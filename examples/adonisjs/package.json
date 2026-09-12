@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@well-known-js/agent-card": "workspace:*",
+		"@well-known-js/api-catalog": "workspace:*",
 		"@well-known-js/adonisjs": "workspace:*",
 		"@well-known-js/apple-app-site-association": "workspace:*",
 		"@well-known-js/assetlinks": "workspace:*",

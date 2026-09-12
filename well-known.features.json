@@ -33,6 +33,15 @@
 	],
 	"features": [
 		{
+			"id": "api-catalog",
+			"package": "@well-known-js/api-catalog",
+			"export": "apiCatalog",
+			"filename": "api-catalog",
+			"path": "/.well-known/api-catalog",
+			"contentType": "application/linkset+json; profile=\"https://www.rfc-editor.org/info/rfc9727\"",
+			"status": "ready"
+		},
+		{
 			"id": "agent-card",
 			"package": "@well-known-js/agent-card",
 			"export": "agentCard",

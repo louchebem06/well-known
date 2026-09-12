@@ -13,6 +13,7 @@ application's public assets directory.
 | ------------------------------------------- | -------------------------------------------------------------- |
 | `@well-known-js/core`                       | Provider types and the `defineConfig` helper                   |
 | `@well-known-js/agent-card`                 | Agent2Agent Agent Card provider and schema                     |
+| `@well-known-js/api-catalog`                | RFC 9727 API Catalog Linkset provider and schema               |
 | `@well-known-js/apple-app-site-association` | Apple App Site Association provider and schema                 |
 | `@well-known-js/assetlinks`                 | Android Digital Asset Links provider and schema                |
 | `@well-known-js/security-txt`               | RFC 9116 security.txt provider and schema                      |
