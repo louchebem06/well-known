@@ -68,6 +68,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -120,6 +123,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -172,6 +178,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -227,6 +236,9 @@ importers:
       '@well-known-js/elysia':
         specifier: workspace:*
         version: link:../../packages/elysia
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -282,6 +294,9 @@ importers:
       '@well-known-js/express':
         specifier: workspace:*
         version: link:../../packages/express
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -340,6 +355,9 @@ importers:
       '@well-known-js/fastify':
         specifier: workspace:*
         version: link:../../packages/fastify
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -395,6 +413,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/hono':
         specifier: workspace:*
         version: link:../../packages/hono
@@ -450,6 +471,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/koa':
         specifier: workspace:*
         version: link:../../packages/koa
@@ -517,6 +541,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/nestjs':
         specifier: workspace:*
         version: link:../../packages/nestjs
@@ -575,6 +602,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/next':
         specifier: workspace:*
         version: link:../../packages/next
@@ -639,6 +669,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/node':
         specifier: workspace:*
         version: link:../../packages/node
@@ -691,6 +724,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/nuxt':
         specifier: workspace:*
         version: link:../../packages/nuxt
@@ -749,6 +785,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -801,6 +840,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -853,6 +895,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -914,6 +959,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -966,6 +1014,9 @@ importers:
       '@well-known-js/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@well-known-js/gpc':
+        specifier: workspace:*
+        version: link:../../packages/gpc
       '@well-known-js/oauth-authorization-server':
         specifier: workspace:*
         version: link:../../packages/oauth-authorization-server
@@ -1111,6 +1162,15 @@ importers:
       fastify:
         specifier: ^5.12.4
         version: 5.12.4
+
+  packages/gpc:
+    dependencies:
+      '@well-known-js/core':
+        specifier: workspace:*
+        version: link:../core
+      zod:
+        specifier: ^4.6.2
+        version: 4.6.2
 
   packages/hono:
     dependencies:
