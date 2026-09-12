@@ -15,6 +15,7 @@
 		"@well-known-js/did-web": "workspace:*",
 		"@well-known-js/did-configuration": "workspace:*",
 		"@well-known-js/mta-sts": "workspace:*",
+		"@well-known-js/sbom": "workspace:*",
 		"@well-known-js/gpc": "workspace:*",
 		"@well-known-js/adonisjs": "workspace:*",
 		"@well-known-js/apple-app-site-association": "workspace:*",

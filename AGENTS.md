@@ -13,6 +13,7 @@ The workspace is split into small, framework-agnostic packages:
 - `packages/did-web`: did:web DID document provider and schema.
 - `packages/did-configuration`: DIF DID Configuration resource provider and schema.
 - `packages/mta-sts`: RFC 8461 SMTP MTA-STS policy provider and schema.
+- `packages/sbom`: RFC 9472 software bill of materials provider.
 - `packages/apple-app-site-association`: Apple App Site Association provider and schema.
 - `packages/assetlinks`: Android Digital Asset Links provider and schema.
 - `packages/security-txt`: RFC 9116 security.txt provider and schema.

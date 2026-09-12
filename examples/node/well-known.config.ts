@@ -3,6 +3,7 @@ import { apiCatalog } from "@well-known-js/api-catalog";
 import { didWeb } from "@well-known-js/did-web";
 import { didConfiguration } from "@well-known-js/did-configuration";
 import { mtaSts } from "@well-known-js/mta-sts";
+import { sbom } from "@well-known-js/sbom";
 import { gpc } from "@well-known-js/gpc";
 import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-association";
 import { assetLinks } from "@well-known-js/assetlinks";
@@ -15,6 +16,14 @@ import { securityTxt } from "@well-known-js/security-txt";
 import { webAuthn } from "@well-known-js/webauthn";
 export default defineConfig({
 	providers: [
+		sbom({
+			contentType: "application/spdx+json",
+			body: JSON.stringify({
+				spdxVersion: "SPDX-2.3",
+				SPDXID: "SPDXRef-DOCUMENT",
+				name: "example-app",
+			}),
+		}),
 		mtaSts({
 			version: "STSv1",
 			mode: "enforce",

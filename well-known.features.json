@@ -33,6 +33,15 @@
 	],
 	"features": [
 		{
+			"id": "sbom",
+			"package": "@well-known-js/sbom",
+			"export": "sbom",
+			"filename": "sbom",
+			"path": "/.well-known/sbom",
+			"contentType": "application/spdx+json",
+			"status": "ready"
+		},
+		{
 			"id": "mta-sts",
 			"package": "@well-known-js/mta-sts",
 			"export": "mtaSts",

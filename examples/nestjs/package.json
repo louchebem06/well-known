@@ -16,6 +16,7 @@
 		"@well-known-js/did-web": "workspace:*",
 		"@well-known-js/did-configuration": "workspace:*",
 		"@well-known-js/mta-sts": "workspace:*",
+		"@well-known-js/sbom": "workspace:*",
 		"@well-known-js/gpc": "workspace:*",
 		"@nestjs/common": "^12.0.1",
 		"@nestjs/core": "^12.0.1",
