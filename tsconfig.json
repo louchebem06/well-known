@@ -1,17 +1,9 @@
 {
-	"compilerOptions": {
-		"target": "ES2022",
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext",
-		"strict": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"declaration": true,
-		"declarationMap": true,
-		"sourceMap": true,
-		"noUncheckedIndexedAccess": true,
-		"noImplicitOverride": true
-	},
-	"exclude": ["node_modules", "dist", "coverage"]
+	"files": [],
+	"references": [
+		{ "path": "./packages/core" },
+		{ "path": "./packages/apple-app-site-association" },
+		{ "path": "./packages/assetlinks" },
+		{ "path": "./packages/sveltekit" }
+	]
 }
