@@ -15,6 +15,7 @@ application's public assets directory.
 | `@well-known-js/apple-app-site-association` | Apple App Site Association provider and schema                 |
 | `@well-known-js/assetlinks`                 | Android Digital Asset Links provider and schema                |
 | `@well-known-js/security-txt`               | RFC 9116 security.txt provider and schema                      |
+| `@well-known-js/webauthn`                   | WebAuthn Related Origin Requests provider and schema           |
 | `@well-known-js/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known-js/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
 | `@well-known-js/next`                       | Next.js adapter generating files in `public`                   |
@@ -246,6 +247,30 @@ The generated RFC 9116 document is served as `text/plain; charset=utf-8` at:
 
 ```text
 /.well-known/security.txt
+```
+
+## WebAuthn related origins
+
+Install the WebAuthn provider:
+
+```sh
+pnpm add @well-known-js/webauthn
+```
+
+List the HTTPS origins allowed to share credentials with the relying party ID:
+
+```ts
+import { webAuthn } from "@well-known-js/webauthn";
+
+webAuthn({
+	origins: ["https://example.co.uk", "https://login.example.com"],
+});
+```
+
+The generated JSON document is available at:
+
+```text
+/.well-known/webauthn
 ```
 
 ## Next.js

@@ -10,6 +10,7 @@ The workspace is split into small, framework-agnostic packages:
 - `packages/apple-app-site-association`: Apple App Site Association provider and schema.
 - `packages/assetlinks`: Android Digital Asset Links provider and schema.
 - `packages/security-txt`: RFC 9116 security.txt provider and schema.
+- `packages/webauthn`: WebAuthn Related Origin Requests provider and schema.
 - `packages/vite`: generic Vite plugin, configuration loader, and file generator.
 - `packages/sveltekit`: thin SvelteKit adapter around `@well-known-js/vite`.
 - `examples/sveltekit`: integration example used by the workspace build.

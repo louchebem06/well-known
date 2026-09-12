@@ -16,6 +16,7 @@
 		"@well-known-js/core": "workspace:*",
 		"@well-known-js/hono": "workspace:*",
 		"@well-known-js/security-txt": "workspace:*",
+		"@well-known-js/webauthn": "workspace:*",
 		"hono": "^4.13.7"
 	},
 	"devDependencies": {

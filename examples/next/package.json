@@ -16,6 +16,7 @@
 		"@well-known-js/core": "workspace:*",
 		"@well-known-js/next": "workspace:*",
 		"@well-known-js/security-txt": "workspace:*",
+		"@well-known-js/webauthn": "workspace:*",
 		"next": "^16.3.5",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0"

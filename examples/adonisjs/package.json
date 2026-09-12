@@ -14,7 +14,8 @@
 		"@well-known-js/apple-app-site-association": "workspace:*",
 		"@well-known-js/assetlinks": "workspace:*",
 		"@well-known-js/core": "workspace:*",
-		"@well-known-js/security-txt": "workspace:*"
+		"@well-known-js/security-txt": "workspace:*",
+		"@well-known-js/webauthn": "workspace:*"
 	},
 	"devDependencies": {
 		"@types/node": "^24.0.0",
