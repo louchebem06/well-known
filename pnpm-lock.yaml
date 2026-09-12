@@ -50,6 +50,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -75,6 +78,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -97,6 +103,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/astro':
         specifier: workspace:*
         version: link:../../packages/astro
@@ -125,6 +134,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -153,6 +165,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -184,6 +199,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -215,6 +233,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -243,6 +264,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -283,6 +307,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -314,6 +341,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -351,6 +381,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -376,6 +409,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -407,6 +443,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -432,6 +471,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -457,6 +499,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -491,6 +536,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -516,6 +564,9 @@ importers:
       '@well-known/apple-app-site-association':
         specifier: workspace:*
         version: link:../../packages/apple-app-site-association
+      '@well-known/assetlinks':
+        specifier: workspace:*
+        version: link:../../packages/assetlinks
       '@well-known/core':
         specifier: workspace:*
         version: link:../../packages/core
@@ -571,6 +622,9 @@ importers:
       '@well-known/core':
         specifier: workspace:*
         version: link:../core
+      zod:
+        specifier: ^4.6.2
+        version: 4.6.2
 
   packages/astro:
     dependencies:

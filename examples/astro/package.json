@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@well-known/apple-app-site-association": "workspace:*",
+		"@well-known/assetlinks": "workspace:*",
 		"@well-known/astro": "workspace:*",
 		"@well-known/core": "workspace:*",
 		"astro": "^6.4.8"

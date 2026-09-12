@@ -7,3 +7,5 @@ build
 **/.nuxt/**
 **/.output/**
 **/*.astro
+**/public/.well-known/**
+**/static/.well-known/**

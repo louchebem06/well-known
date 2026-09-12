@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@well-known/apple-app-site-association": "workspace:*",
+		"@well-known/assetlinks": "workspace:*",
 		"@well-known/core": "workspace:*",
 		"@well-known/express": "workspace:*",
 		"express": "^5.2.1"

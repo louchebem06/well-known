@@ -22,6 +22,7 @@
 	},
 	"dependencies": {
 		"@well-known/apple-app-site-association": "workspace:*",
+		"@well-known/assetlinks": "workspace:*",
 		"@well-known/core": "workspace:*",
 		"@well-known/sveltekit": "workspace:*"
 	}

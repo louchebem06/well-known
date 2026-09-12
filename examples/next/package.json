@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@well-known/apple-app-site-association": "workspace:*",
+		"@well-known/assetlinks": "workspace:*",
 		"@well-known/core": "workspace:*",
 		"@well-known/next": "workspace:*",
 		"next": "^16.3.5",

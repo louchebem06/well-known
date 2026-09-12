@@ -48,7 +48,7 @@
 			"filename": "assetlinks.json",
 			"path": "/.well-known/assetlinks.json",
 			"contentType": "application/json",
-			"status": "development"
+			"status": "ready"
 		}
 	]
 }

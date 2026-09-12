@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@hono/node-server": "^1.19.0",
 		"@well-known/apple-app-site-association": "workspace:*",
+		"@well-known/assetlinks": "workspace:*",
 		"@well-known/core": "workspace:*",
 		"@well-known/hono": "workspace:*",
 		"hono": "^4.13.7"

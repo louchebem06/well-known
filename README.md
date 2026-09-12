@@ -182,6 +182,43 @@ With the AASA provider, the generated file is available at:
 /.well-known/apple-app-site-association
 ```
 
+## Android Asset Links
+
+Install the Asset Links provider:
+
+```sh
+pnpm add @well-known/assetlinks
+```
+
+Add it to `well-known.config.ts` with the Android package name and SHA-256 certificate
+fingerprints:
+
+```ts
+import { assetLinks } from "@well-known/assetlinks";
+
+assetLinks({
+	statements: [
+		{
+			relation: ["delegate_permission/common.handle_all_urls"],
+			target: {
+				namespace: "android_app",
+				package_name: "com.example.app",
+				sha256_cert_fingerprints: [
+					"AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA:AA",
+				],
+			},
+		},
+	],
+});
+```
+
+The provider also accepts Web targets and `{ include: "https://..." }` statements. The generated
+file is available at:
+
+```text
+/.well-known/assetlinks.json
+```
+
 ## Next.js
 
 Install the Next.js adapter and the providers required by the project:
