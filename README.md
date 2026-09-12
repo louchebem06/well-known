@@ -1,6 +1,7 @@
 # well-known
 
-Type-safe packages for generating files served from `/.well-known/` in Vite and SvelteKit projects.
+Type-safe packages for generating files served from `/.well-known/` in Vite, SvelteKit, and Next.js
+projects.
 
 The project models each well-known file as a provider. Providers validate their configuration and
 generate the file body; framework integrations load the configuration and write the result into the
@@ -14,6 +15,7 @@ application's public assets directory.
 | `@well-known/apple-app-site-association` | Apple App Site Association provider and schema                 |
 | `@well-known/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
+| `@well-known/next`                       | Next.js adapter generating files in `public`                   |
 | `@well-known/assetlinks`                 | Reserved for Android Asset Links support                       |
 
 ## Requirements
@@ -21,6 +23,7 @@ application's public assets directory.
 - Node.js 20 or later
 - Vite 5 or later for the Vite integrations
 - SvelteKit 2 or later when using `@well-known/sveltekit`
+- Next.js 15 or later when using `@well-known/next`
 
 ## Installation
 
@@ -130,6 +133,42 @@ With the AASA provider, the generated file is available at:
 /.well-known/apple-app-site-association
 ```
 
+## Next.js
+
+Install the Next.js adapter and the providers required by the project:
+
+```sh
+pnpm add @well-known/core @well-known/next
+pnpm add @well-known/apple-app-site-association
+```
+
+Wrap the Next.js configuration in `next.config.ts`:
+
+```ts
+import { withWellKnown } from "@well-known/next";
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {};
+
+export default withWellKnown()(nextConfig);
+```
+
+The adapter reads `well-known.config.ts` and writes generated files to `public`. It also configures
+the providers' content types. During `next dev`, files are regenerated when the well-known
+configuration changes.
+
+Both paths can be customized relative to the Next.js project root:
+
+```ts
+export default withWellKnown({
+	configFile: "config/well-known.ts",
+	publicDir: "assets",
+})(nextConfig);
+```
+
+Changing provider content is supported without restarting the development server. Restart Next.js
+after changing the configured provider paths so its header routes can be rebuilt.
+
 ## Creating a provider
 
 A provider instance declares its destination and returns the generated file:
@@ -168,7 +207,8 @@ pnpm format:check
 pnpm lint
 ```
 
-The SvelteKit example is located in `examples/sveltekit` and is included in the workspace build.
+The SvelteKit and Next.js examples are located in `examples/sveltekit` and `examples/next`. Both are
+included in the workspace build.
 
 ## License
 
