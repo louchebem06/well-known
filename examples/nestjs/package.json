@@ -18,6 +18,7 @@
 		"@well-known-js/assetlinks": "workspace:*",
 		"@well-known-js/core": "workspace:*",
 		"@well-known-js/nestjs": "workspace:*",
+		"@well-known-js/passkey-endpoints": "workspace:*",
 		"@well-known-js/security-txt": "workspace:*",
 		"@well-known-js/webauthn": "workspace:*",
 		"reflect-metadata": "^0.2.2",

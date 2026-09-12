@@ -16,6 +16,7 @@ application's public assets directory.
 | `@well-known-js/assetlinks`                 | Android Digital Asset Links provider and schema                |
 | `@well-known-js/security-txt`               | RFC 9116 security.txt provider and schema                      |
 | `@well-known-js/webauthn`                   | WebAuthn Related Origin Requests provider and schema           |
+| `@well-known-js/passkey-endpoints`          | W3C passkey endpoint discovery provider and schema             |
 | `@well-known-js/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known-js/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
 | `@well-known-js/next`                       | Next.js adapter generating files in `public`                   |
@@ -271,6 +272,32 @@ The generated JSON document is available at:
 
 ```text
 /.well-known/webauthn
+```
+
+## Passkey endpoints
+
+Install the passkey endpoint discovery provider:
+
+```sh
+pnpm add @well-known-js/passkey-endpoints
+```
+
+Advertise direct account workflows for credential managers:
+
+```ts
+import { passkeyEndpoints } from "@well-known-js/passkey-endpoints";
+
+passkeyEndpoints({
+	enroll: "https://example.com/account/passkeys/create",
+	manage: "https://example.com/account/passkeys",
+	prfUsageDetails: "https://example.com/help/passkeys",
+});
+```
+
+The generated JSON document is available at:
+
+```text
+/.well-known/passkey-endpoints
 ```
 
 ## Next.js

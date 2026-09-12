@@ -67,6 +67,15 @@
 			"path": "/.well-known/webauthn",
 			"contentType": "application/json",
 			"status": "ready"
+		},
+		{
+			"id": "passkey-endpoints",
+			"package": "@well-known-js/passkey-endpoints",
+			"export": "passkeyEndpoints",
+			"filename": "passkey-endpoints",
+			"path": "/.well-known/passkey-endpoints",
+			"contentType": "application/json",
+			"status": "ready"
 		}
 	]
 }

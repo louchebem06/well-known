@@ -6,6 +6,7 @@
 		{ "path": "./packages/assetlinks" },
 		{ "path": "./packages/security-txt" },
 		{ "path": "./packages/webauthn" },
+		{ "path": "./packages/passkey-endpoints" },
 		{ "path": "./packages/vite" },
 		{ "path": "./packages/sveltekit" },
 		{ "path": "./packages/next" },
