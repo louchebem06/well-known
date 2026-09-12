@@ -2,12 +2,19 @@ import { appleAppSiteAssociation } from "@well-known-js/apple-app-site-associati
 import { assetLinks } from "@well-known-js/assetlinks";
 import { defineConfig } from "@well-known-js/core";
 import { openIdConfiguration } from "@well-known-js/openid-configuration";
+import { oauthProtectedResource } from "@well-known-js/oauth-protected-resource";
 import { passkeyEndpoints } from "@well-known-js/passkey-endpoints";
 import { securityTxt } from "@well-known-js/security-txt";
 import { webAuthn } from "@well-known-js/webauthn";
 
 export default defineConfig({
 	providers: [
+		oauthProtectedResource({
+			resource: "https://api.example.com",
+			authorization_servers: ["https://id.example.com"],
+			scopes_supported: ["read", "write"],
+			bearer_methods_supported: ["header"],
+		}),
 		openIdConfiguration({
 			issuer: "https://id.example.com",
 			authorization_endpoint: "https://id.example.com/authorize",
