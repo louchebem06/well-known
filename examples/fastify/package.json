@@ -15,6 +15,7 @@
 		"@well-known-js/core": "workspace:*",
 		"@well-known-js/fastify": "workspace:*",
 		"@well-known-js/openid-configuration": "workspace:*",
+		"@well-known-js/oauth-authorization-server": "workspace:*",
 		"@well-known-js/oauth-protected-resource": "workspace:*",
 		"@well-known-js/passkey-endpoints": "workspace:*",
 		"@well-known-js/security-txt": "workspace:*",

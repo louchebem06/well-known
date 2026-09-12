@@ -8,6 +8,7 @@
 		{ "path": "./packages/webauthn" },
 		{ "path": "./packages/passkey-endpoints" },
 		{ "path": "./packages/openid-configuration" },
+		{ "path": "./packages/oauth-authorization-server" },
 		{ "path": "./packages/oauth-protected-resource" },
 		{ "path": "./packages/vite" },
 		{ "path": "./packages/sveltekit" },

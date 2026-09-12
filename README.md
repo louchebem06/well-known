@@ -18,6 +18,7 @@ application's public assets directory.
 | `@well-known-js/webauthn`                   | WebAuthn Related Origin Requests provider and schema           |
 | `@well-known-js/passkey-endpoints`          | W3C passkey endpoint discovery provider and schema             |
 | `@well-known-js/openid-configuration`       | OpenID Connect Discovery metadata provider and schema          |
+| `@well-known-js/oauth-authorization-server` | OAuth 2.0 Authorization Server Metadata provider and schema    |
 | `@well-known-js/oauth-protected-resource`   | OAuth 2.0 Protected Resource Metadata provider and schema      |
 | `@well-known-js/vite`                       | Framework-agnostic Vite plugin                                 |
 | `@well-known-js/sveltekit`                  | SvelteKit adapter using the Vite plugin with `static` defaults |
@@ -322,6 +323,32 @@ openIdConfiguration({
 ```
 
 The metadata is available at `/.well-known/openid-configuration`.
+
+## OAuth authorization server metadata
+
+Install the RFC 8414 provider to advertise an OAuth authorization server's endpoints and
+capabilities:
+
+```sh
+pnpm add @well-known-js/oauth-authorization-server
+```
+
+```ts
+import { oauthAuthorizationServer } from "@well-known-js/oauth-authorization-server";
+
+oauthAuthorizationServer({
+	issuer: "https://id.example.com",
+	authorization_endpoint: "https://id.example.com/authorize",
+	token_endpoint: "https://id.example.com/token",
+	jwks_uri: "https://id.example.com/jwks.json",
+	response_types_supported: ["code"],
+	grant_types_supported: ["authorization_code"],
+	code_challenge_methods_supported: ["S256"],
+});
+```
+
+The metadata is available at `/.well-known/oauth-authorization-server`. Issuer paths are appended
+to the endpoint according to RFC 8414.
 
 ## OAuth protected resource metadata
 
