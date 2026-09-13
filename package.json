@@ -21,7 +21,8 @@
 		"test:coverage": "pnpm -r test:coverage",
 		"typecheck": "pnpm -r typecheck && tsc -p scripts/tsconfig.json",
 		"dev": "pnpm --filter './examples/*' --parallel --stream dev",
-		"dev:packages": "pnpm --filter './packages/*' --parallel dev"
+		"dev:packages": "pnpm --filter './packages/*' --parallel dev",
+		"release:publish-new": "node --import tsx scripts/publish-new-packages.ts"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
