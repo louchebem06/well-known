@@ -6,6 +6,7 @@ interface PackageJson {
 	name?: string;
 	version?: string;
 	private?: boolean;
+
 }
 
 const PACKAGES_DIR = join(process.cwd(), "packages");
@@ -83,6 +84,11 @@ function main() {
 		if (!success) {
 			console.log("\n🛑 Stopping. Retry later to avoid npm rate limiting.");
 
+
+			process.exit(1);
+		}
+
+
 			process.exit(1);
 		}
 
@@ -93,6 +99,7 @@ function main() {
 	console.log(`Published: ${published}`);
 	console.log(`Skipped:   ${skipped}`);
 	console.log("─────────────────────────────");
+
 }
 
 main();
