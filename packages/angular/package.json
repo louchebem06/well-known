@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/angular",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Angular SSR middleware for serving .well-known routes.",
 	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
