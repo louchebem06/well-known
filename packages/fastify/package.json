@@ -2,6 +2,15 @@
 	"name": "@well-known-js/fastify",
 	"version": "1.0.1",
 	"description": "Fastify plugin for serving .well-known routes.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"fastify",
+		"nodejs",
+		"web-standards",
+		"plugin"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

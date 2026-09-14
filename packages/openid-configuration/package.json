@@ -2,6 +2,16 @@
 	"name": "@well-known-js/openid-configuration",
 	"version": "1.0.0",
 	"description": "Generate OpenID Connect Discovery provider metadata.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"openid-connect",
+		"oidc",
+		"oauth2",
+		"provider-metadata",
+		"discovery"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

@@ -2,6 +2,14 @@
 	"name": "@well-known-js/react-router",
 	"version": "1.0.1",
 	"description": "React Router resource route handlers for .well-known routes.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"react-router",
+		"web-standards",
+		"route-handler"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

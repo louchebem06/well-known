@@ -2,6 +2,15 @@
 	"name": "@well-known-js/security-txt",
 	"version": "1.0.0",
 	"description": "Generate RFC 9116 security.txt vulnerability disclosure files.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"security-txt",
+		"security",
+		"vulnerability-disclosure",
+		"rfc9116"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

@@ -2,6 +2,15 @@
 	"name": "@well-known-js/apple-app-site-association",
 	"version": "1.0.1",
 	"description": "Generate Apple App Site Association files for Universal Links and Associated Domains.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"aasa",
+		"apple",
+		"universal-links",
+		"associated-domains"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

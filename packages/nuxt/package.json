@@ -2,6 +2,15 @@
 	"name": "@well-known-js/nuxt",
 	"version": "1.0.1",
 	"description": "Nuxt module for generating .well-known files.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"nuxt",
+		"vue",
+		"web-standards",
+		"module"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

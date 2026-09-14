@@ -2,6 +2,15 @@
 	"name": "@well-known-js/nestjs",
 	"version": "1.0.1",
 	"description": "NestJS integration for serving .well-known routes.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"nestjs",
+		"nodejs",
+		"web-standards",
+		"integration"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

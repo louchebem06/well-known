@@ -2,6 +2,15 @@
 	"name": "@well-known-js/oauth-authorization-server",
 	"version": "1.0.0",
 	"description": "Generate OAuth 2.0 Authorization Server Metadata documents.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"oauth2",
+		"authorization-server",
+		"server-metadata",
+		"rfc8414"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

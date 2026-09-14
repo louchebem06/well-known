@@ -2,6 +2,15 @@
 	"name": "@well-known-js/passkey-endpoints",
 	"version": "1.0.0",
 	"description": "Generate WebAuthn relying party passkey endpoint discovery documents.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"passkeys",
+		"webauthn",
+		"credential-management",
+		"service-discovery"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",

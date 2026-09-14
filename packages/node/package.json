@@ -2,6 +2,15 @@
 	"name": "@well-known-js/node",
 	"version": "1.0.1",
 	"description": "Node.js and Fetch handlers for serving .well-known routes.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
+	"keywords": [
+		"well-known",
+		"typescript",
+		"nodejs",
+		"fetch-api",
+		"web-standards",
+		"http"
+	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",
