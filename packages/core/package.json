@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/core",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Core utilities and types for generating .well-known files.",
 	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [

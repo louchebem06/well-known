@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/agent-card",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Generate Agent2Agent Agent Card discovery documents.",
 	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [

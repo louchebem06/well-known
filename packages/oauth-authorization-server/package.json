@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/oauth-authorization-server",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Generate OAuth 2.0 Authorization Server Metadata documents.",
 	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [

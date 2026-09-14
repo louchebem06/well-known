@@ -1,6 +1,6 @@
 {
 	"name": "@well-known-js/oauth-protected-resource",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Generate OAuth 2.0 Protected Resource Metadata documents.",
 	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
