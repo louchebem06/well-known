@@ -2,6 +2,7 @@
 	"name": "@well-known-js/did-web",
 	"version": "1.0.0",
 	"description": "Generate did:web DID documents.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",

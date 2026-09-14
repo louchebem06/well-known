@@ -2,6 +2,7 @@
 	"name": "@well-known-js/api-catalog",
 	"version": "1.0.0",
 	"description": "Generate RFC 9727 API Catalog Linkset documents.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",

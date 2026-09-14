@@ -2,6 +2,7 @@
 	"name": "@well-known-js/hono",
 	"version": "1.0.1",
 	"description": "Hono middleware for serving .well-known routes.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",

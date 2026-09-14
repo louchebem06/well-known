@@ -2,6 +2,7 @@
 	"name": "@well-known-js/sbom",
 	"version": "1.0.0",
 	"description": "Serve RFC 9472 software bills of materials.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",

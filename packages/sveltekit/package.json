@@ -2,6 +2,7 @@
 	"name": "@well-known-js/sveltekit",
 	"version": "1.0.1",
 	"description": "SvelteKit integration for generating .well-known files.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",

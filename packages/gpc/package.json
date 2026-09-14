@@ -2,6 +2,7 @@
 	"name": "@well-known-js/gpc",
 	"version": "1.0.0",
 	"description": "Generate Global Privacy Control support resources.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",

@@ -2,6 +2,7 @@
 	"name": "@well-known-js/assetlinks",
 	"version": "1.0.1",
 	"description": "Generate Android Digital Asset Links assetlinks.json files.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",

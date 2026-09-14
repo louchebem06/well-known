@@ -2,6 +2,7 @@
 	"name": "@well-known-js/mta-sts",
 	"version": "1.0.0",
 	"description": "Generate RFC 8461 MTA-STS policies.",
+	"homepage": "https://www.bryanledda.fr/fr/products/tools/well-known-js",
 	"keywords": [
 		"well-known",
 		"typescript",
