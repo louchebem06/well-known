@@ -122,6 +122,9 @@ describe("Agent Card generator", () => {
 				supportedInterfaces: [{ ...config.supportedInterfaces[0], protocolVersion: "1" }],
 			},
 		],
+		["missing skills", { ...config, skills: [] }],
+		["missing skill tags", { ...config, skills: [{ ...config.skills[0], tags: [] }] }],
+		["missing output modes", { ...config, defaultOutputModes: [] }],
 		["missing input modes", { ...config, defaultInputModes: [] }],
 		[
 			"HTTP OAuth endpoint",

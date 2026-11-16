@@ -114,7 +114,7 @@ async function githubRequest(path: string, init: RequestInit = {}): Promise<Resp
 	return response;
 }
 
-async function createIssues(changes: SourceResult[]): Promise<void> {
+export async function createIssues(changes: SourceResult[]): Promise<void> {
 	const repository = process.env.GITHUB_REPOSITORY;
 	if (!repository)
 		throw new Error("GITHUB_REPOSITORY is required to create standards-watch issues.");
@@ -134,19 +134,27 @@ async function createIssues(changes: SourceResult[]): Promise<void> {
 		if (!(error instanceof Error) || !error.message.includes("HTTP 422")) throw error;
 	}
 
-	const existing: Array<{ body?: string }> = [];
+	const existing: Array<{ body?: string; state?: string; pull_request?: unknown }> = [];
 	for (let page = 1; ; page += 1) {
 		const response = await githubRequest(
 			`/repos/${owner}/${name}/issues?state=all&labels=${issueLabel}&per_page=100&page=${page}`,
 		);
-		const issues = (await response.json()) as Array<{ body?: string }>;
+		const issues = (await response.json()) as typeof existing;
 		existing.push(...issues);
 		if (issues.length < 100) break;
 	}
 
 	for (const change of changes) {
 		const marker = `<!-- standards-watch:${change.id}:${change.current} -->`;
-		if (existing.some((issue) => issue.body?.includes(marker))) {
+		if (
+			existing.some(
+				(issue) =>
+					!issue.pull_request &&
+					(issue.body?.includes(marker) ||
+						(issue.state === "open" &&
+							issue.body?.includes(`<!-- standards-watch:${change.id}:`))),
+			)
+		) {
 			console.log(`Issue already recorded for ${change.id}@${change.current}.`);
 			continue;
 		}
