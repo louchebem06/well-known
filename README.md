@@ -138,6 +138,25 @@ export default defineConfig({
 
 `defineConfig` also prevents two providers from targeting the same well-known path.
 
+For a resource without a dedicated provider, use `custom()` from `@well-known-js/core`:
+
+```ts
+import { custom, defineConfig } from "@well-known-js/core";
+
+export default defineConfig({
+	providers: [
+		custom({
+			path: "/.well-known/example.json",
+			contentType: "application/json",
+			body: JSON.stringify({ enabled: true }),
+		}),
+	],
+});
+```
+
+The body is a string and is written unchanged. Custom providers work with every adapter.
+See the [core documentation](./packages/core/README.md#custom-resources) for path validation and options.
+
 ## Vite
 
 Add the plugin to `vite.config.ts`:

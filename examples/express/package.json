@@ -7,7 +7,7 @@
 		"dev": "tsx watch src/main.ts",
 		"build": "tsc -p tsconfig.build.json",
 		"start": "node dist/src/main.js",
-		"typecheck": "tsc --noEmit",
+		"typecheck": "tsc -b",
 		"test": "vitest run --passWithNoTests"
 	},
 	"dependencies": {
