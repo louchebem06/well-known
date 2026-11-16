@@ -181,20 +181,22 @@ export const agentCardSchema = z
 		securityRequirements: z.array(securityRequirementSchema).optional(),
 		defaultInputModes: z.array(nonEmptyString).min(1),
 		defaultOutputModes: z.array(nonEmptyString).min(1),
-		skills: z.array(
-			z
-				.object({
-					id: nonEmptyString,
-					name: nonEmptyString,
-					description: nonEmptyString,
-					tags: z.array(nonEmptyString),
-					examples: z.array(nonEmptyString).optional(),
-					inputModes: z.array(nonEmptyString).optional(),
-					outputModes: z.array(nonEmptyString).optional(),
-					securityRequirements: z.array(securityRequirementSchema).optional(),
-				})
-				.loose(),
-		),
+		skills: z
+			.array(
+				z
+					.object({
+						id: nonEmptyString,
+						name: nonEmptyString,
+						description: nonEmptyString,
+						tags: z.array(nonEmptyString).min(1),
+						examples: z.array(nonEmptyString).optional(),
+						inputModes: z.array(nonEmptyString).optional(),
+						outputModes: z.array(nonEmptyString).optional(),
+						securityRequirements: z.array(securityRequirementSchema).optional(),
+					})
+					.loose(),
+			)
+			.min(1),
 		signatures: z
 			.array(
 				z

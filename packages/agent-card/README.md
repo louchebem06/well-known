@@ -48,6 +48,9 @@ The generated file uses `application/json` at:
 /.well-known/agent-card.json
 ```
 
+Required arrays (`supportedInterfaces`, `defaultInputModes`, `defaultOutputModes`, `skills`, and
+each skill’s `tags`) must contain at least one item.
+
 The schema preserves unknown fields for forward compatibility with future A2A additions.
 
 [A2A specification](https://a2a-protocol.org/latest/specification/) ·

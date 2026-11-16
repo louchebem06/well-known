@@ -9,6 +9,10 @@ permissions:
     contents: read
     issues: write
 
+concurrency:
+    group: standards-watch
+    cancel-in-progress: false
+
 jobs:
     check:
         runs-on: ubuntu-latest

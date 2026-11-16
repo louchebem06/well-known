@@ -613,8 +613,13 @@ pnpm release:github
 
 The **Standards watch** workflow checks the living specifications and vendor documentation used by
 the provider packages every Monday. When a source changes, it opens a labeled GitHub issue for the
-affected package without duplicating an issue for the same upstream revision. After reviewing a
-change and updating the implementation when necessary, refresh and commit the recorded fingerprints:
+affected package. Each source has at most one open alert; later revisions are covered by that open
+review. A closed alert suppresses only its exact fingerprint, so future changes can open a new issue.
+RFC sources use the published plain text rather than the changing presentation of RFC info pages.
+The A2A data model is monitored alongside its prose specification.
+
+After reviewing a change and updating the implementation when necessary, refresh and commit the
+recorded fingerprints:
 
 ```sh
 pnpm standards:refresh
